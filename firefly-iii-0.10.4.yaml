@@ -7032,8 +7032,6 @@ components:
       type: object
       required:
         - amount
-        - source_id
-        - destination_id
         - date
         - description
       properties:
@@ -7081,16 +7079,19 @@ components:
         order:
           type: integer
           format: int32
+          nullable: true
           example: 0
           description: "Order of this entry in the list of transactions."
         currency_id:
           type: integer
           format: int32
+          nullable: true
           example: 12
           description: Currency ID. Default is the source account's currency, or the user's default currency. Can be used instead of currency_code.
         currency_code:
           type: string
           format: string
+          nullable: true
           example: EUR
           description: Currency code. Default is the source account's currency, or the user's default currency. Can be used instead of currency_id.
         currency_symbol:
@@ -7162,16 +7163,19 @@ components:
         category_name:
           type: string
           format: string
+          nullable: true
           example: Groceries
           description: "The name of the category to be used. If the category is unknown, it will be created. If the ID and the name point to different categories, the ID overrules the name."
         source_id:
           type: integer
           format: int32
+          nullable: true
           example: 2
           description: "ID of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account."
         source_name:
           type: string
           format: string
+          nullable: true
           example: "Checking account"
           description: "Name of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account. Can be used instead of the source_id. If the transaction is a deposit, the source_name can be filled in freely: the account will be created based on the name."
         source_iban:
@@ -7185,11 +7189,13 @@ components:
         destination_id:
           type: integer
           format: int32
+          nullable: true
           example: 2
           description: "ID of the destination account. For a deposit or a transfer, this must always be an asset account. For withdrawals this must be an expense account."
         destination_name:
           type: string
           format: string
+          nullable: true
           example: "Buy and Large"
           description: "Name of the destination account. You can submit the name instead of the ID. For everything except transfers, the account will be auto-generated if unknown, so submitting a name is enough."
         destination_iban:
@@ -7203,16 +7209,19 @@ components:
         reconciled:
           type: boolean
           format: boolean
+          nullable: true
           example: false
           description: "If the transaction has been reconciled already. When you set this, the amount can no longer be edited by the user."
         piggy_bank_id:
           type: integer
           format: int32
+          nullable: true
           description: Optional. Use either this or the piggy_bank_name
           writeOnly: true
         piggy_bank_name:
           type: string
           format: string
+          nullable: true
           description: Optional. Use either this or the piggy_bank_id
           writeOnly: true
         bill_id:
