@@ -1,6 +1,10 @@
 # To generate the client:
 # openapi-generator generate -g csharp-netcore -i firefly-iii-0.10.4.yaml -c openapi-dotnet.yaml -o generated/ -t .\api-template\
 
+# To build & pack for Nuget
+# (TODO Move this into a github action - preferably along with generation)
+# dotnet pack -c Release -p:PackageVersion=0.1.0 -p:PackageLicenseExpression=MIT .\generated\src\FireflyIII\FireflyIII.csproj
+
 packageName: FireflyIII
 packageVersion: 0.1.0
 packageGuid: "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC"
