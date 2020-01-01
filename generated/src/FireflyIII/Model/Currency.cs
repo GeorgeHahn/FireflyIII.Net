@@ -81,7 +81,7 @@ namespace FireflyIII.Model
             this.Default = _default;
             this.DecimalPlaces = decimalPlaces;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -111,19 +111,19 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Code
         /// </summary>
-        [DataMember(Name="code", EmitDefaultValue=false)]
+        [DataMember(Name="code", EmitDefaultValue=true)]
         public string Code { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
+        [DataMember(Name="name", EmitDefaultValue=true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets Symbol
         /// </summary>
-        [DataMember(Name="symbol", EmitDefaultValue=false)]
+        [DataMember(Name="symbol", EmitDefaultValue=true)]
         public string Symbol { get; set; }
 
         /// <summary>
@@ -152,7 +152,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

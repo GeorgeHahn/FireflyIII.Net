@@ -95,7 +95,7 @@ namespace FireflyIII.Model
         /// The object class to which the attachment must be linked.
         /// </summary>
         /// <value>The object class to which the attachment must be linked.</value>
-        [DataMember(Name="model", EmitDefaultValue=false)]
+        [DataMember(Name="model", EmitDefaultValue=true)]
         public ModelEnum Model { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Attachment" /> class.
@@ -142,7 +142,7 @@ namespace FireflyIII.Model
             this.Title = title;
             this.Notes = notes;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -158,7 +158,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Filename
         /// </summary>
-        [DataMember(Name="filename", EmitDefaultValue=false)]
+        [DataMember(Name="filename", EmitDefaultValue=true)]
         public string Filename { get; set; }
 
         /// <summary>
@@ -172,7 +172,7 @@ namespace FireflyIII.Model
         /// ID of the model this attachment is linked to.
         /// </summary>
         /// <value>ID of the model this attachment is linked to.</value>
-        [DataMember(Name="model_id", EmitDefaultValue=false)]
+        [DataMember(Name="model_id", EmitDefaultValue=true)]
         public int ModelId { get; set; }
 
         /// <summary>
@@ -243,7 +243,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

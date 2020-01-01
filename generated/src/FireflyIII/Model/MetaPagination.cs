@@ -47,7 +47,7 @@ namespace FireflyIII.Model
             this.CurrentPage = currentPage;
             this.TotalPages = totalPages;
         }
-        
+
         /// <summary>
         /// Gets or Sets Total
         /// </summary>
@@ -94,7 +94,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

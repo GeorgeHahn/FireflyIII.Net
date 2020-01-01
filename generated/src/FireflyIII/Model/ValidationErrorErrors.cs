@@ -41,7 +41,7 @@ namespace FireflyIII.Model
             this.Field1 = field1;
             this.Field2 = field2;
         }
-        
+
         /// <summary>
         /// Gets or Sets Field1
         /// </summary>
@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

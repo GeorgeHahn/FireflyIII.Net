@@ -53,7 +53,7 @@ namespace FireflyIII.Model
             this.YAxisID = yAxisID;
             this.Entries = entries;
         }
-        
+
         /// <summary>
         /// This is the title of the current set. It can refer to an account, a budget or another object (by name).
         /// </summary>
@@ -127,7 +127,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

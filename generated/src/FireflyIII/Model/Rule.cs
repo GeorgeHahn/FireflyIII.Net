@@ -56,7 +56,7 @@ namespace FireflyIII.Model
         /// Which action is necessary for the rule to fire? Use either store-journal or update-journal.
         /// </summary>
         /// <value>Which action is necessary for the rule to fire? Use either store-journal or update-journal.</value>
-        [DataMember(Name="trigger", EmitDefaultValue=false)]
+        [DataMember(Name="trigger", EmitDefaultValue=true)]
         public TriggerEnum Trigger { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Rule" /> class.
@@ -125,7 +125,7 @@ namespace FireflyIII.Model
             this.Strict = strict;
             this.StopProcessing = stopProcessing;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -141,7 +141,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
-        [DataMember(Name="title", EmitDefaultValue=false)]
+        [DataMember(Name="title", EmitDefaultValue=true)]
         public string Title { get; set; }
 
         /// <summary>
@@ -154,7 +154,7 @@ namespace FireflyIII.Model
         /// ID of the rule group under which the rule must be stored. Either this field or rule_group_title is mandatory.
         /// </summary>
         /// <value>ID of the rule group under which the rule must be stored. Either this field or rule_group_title is mandatory.</value>
-        [DataMember(Name="rule_group_id", EmitDefaultValue=false)]
+        [DataMember(Name="rule_group_id", EmitDefaultValue=true)]
         public int RuleGroupId { get; set; }
 
         /// <summary>
@@ -194,13 +194,13 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Triggers
         /// </summary>
-        [DataMember(Name="triggers", EmitDefaultValue=false)]
+        [DataMember(Name="triggers", EmitDefaultValue=true)]
         public List<RuleTrigger> Triggers { get; set; }
 
         /// <summary>
         /// Gets or Sets Actions
         /// </summary>
-        [DataMember(Name="actions", EmitDefaultValue=false)]
+        [DataMember(Name="actions", EmitDefaultValue=true)]
         public List<RuleAction> Actions { get; set; }
 
         /// <summary>
@@ -227,7 +227,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

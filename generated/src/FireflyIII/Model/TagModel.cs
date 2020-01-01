@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             this.Longitude = longitude;
             this.ZoomLevel = zoomLevel;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -84,14 +84,14 @@ namespace FireflyIII.Model
         /// The tag
         /// </summary>
         /// <value>The tag</value>
-        [DataMember(Name="tag", EmitDefaultValue=false)]
+        [DataMember(Name="tag", EmitDefaultValue=true)]
         public string Tag { get; set; }
 
         /// <summary>
         /// The date to which the tag is applicable.
         /// </summary>
         /// <value>The date to which the tag is applicable.</value>
-        [DataMember(Name="date", EmitDefaultValue=true)]
+        [DataMember(Name="date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? Date { get; set; }
 
@@ -105,21 +105,21 @@ namespace FireflyIII.Model
         /// Latitude of the tag&#39;s location, if applicable. Can be used to draw a map.
         /// </summary>
         /// <value>Latitude of the tag&#39;s location, if applicable. Can be used to draw a map.</value>
-        [DataMember(Name="latitude", EmitDefaultValue=true)]
+        [DataMember(Name="latitude", EmitDefaultValue=false)]
         public double? Latitude { get; set; }
 
         /// <summary>
         /// Latitude of the tag&#39;s location, if applicable. Can be used to draw a map.
         /// </summary>
         /// <value>Latitude of the tag&#39;s location, if applicable. Can be used to draw a map.</value>
-        [DataMember(Name="longitude", EmitDefaultValue=true)]
+        [DataMember(Name="longitude", EmitDefaultValue=false)]
         public double? Longitude { get; set; }
 
         /// <summary>
         /// Zoom level for the map, if drawn. This to set the box right. Unfortunately this is a proprietary value because each map provider has different zoom levels.
         /// </summary>
         /// <value>Zoom level for the map, if drawn. This to set the box right. Unfortunately this is a proprietary value because each map provider has different zoom levels.</value>
-        [DataMember(Name="zoom_level", EmitDefaultValue=true)]
+        [DataMember(Name="zoom_level", EmitDefaultValue=false)]
         public int? ZoomLevel { get; set; }
 
         /// <summary>
@@ -141,7 +141,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

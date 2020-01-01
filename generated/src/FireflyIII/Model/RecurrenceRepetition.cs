@@ -74,7 +74,7 @@ namespace FireflyIII.Model
         /// The type of the repetition. ndom means: the n-th weekday of the month, where you can also specify which day of the week.
         /// </summary>
         /// <value>The type of the repetition. ndom means: the n-th weekday of the month, where you can also specify which day of the week.</value>
-        [DataMember(Name="type", EmitDefaultValue=false)]
+        [DataMember(Name="type", EmitDefaultValue=true)]
         public TypeEnum Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="RecurrenceRepetition" /> class.
@@ -104,7 +104,7 @@ namespace FireflyIII.Model
             this.Skip = skip;
             this.Weekend = weekend;
         }
-        
+
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -127,7 +127,7 @@ namespace FireflyIII.Model
         /// Information that defined the type of repetition. - For &#39;daily&#39;, this is empty. - For &#39;weekly&#39;, it is day of the week between 1 and 7 (Monday - Sunday). - For &#39;ndom&#39;, it is &#39;1,2&#39; or &#39;4,5&#39; or something else, where the first number is the week in the month, and the second number is the day in the week (between 1 and 7). &#39;2,3&#39; means: the 2nd Wednesday of the month - For &#39;monthly&#39; it is the day of the month (1 - 31) - For yearly, it is a full date, ie &#39;2018-09-17&#39;. The year you use does not matter. 
         /// </summary>
         /// <value>Information that defined the type of repetition. - For &#39;daily&#39;, this is empty. - For &#39;weekly&#39;, it is day of the week between 1 and 7 (Monday - Sunday). - For &#39;ndom&#39;, it is &#39;1,2&#39; or &#39;4,5&#39; or something else, where the first number is the week in the month, and the second number is the day in the week (between 1 and 7). &#39;2,3&#39; means: the 2nd Wednesday of the month - For &#39;monthly&#39; it is the day of the month (1 - 31) - For yearly, it is a full date, ie &#39;2018-09-17&#39;. The year you use does not matter. </value>
-        [DataMember(Name="moment", EmitDefaultValue=false)]
+        [DataMember(Name="moment", EmitDefaultValue=true)]
         public string Moment { get; set; }
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

@@ -72,7 +72,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name="type", EmitDefaultValue=false)]
+        [DataMember(Name="type", EmitDefaultValue=true)]
         public TypeEnum Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Recurrence" /> class.
@@ -127,7 +127,7 @@ namespace FireflyIII.Model
             this.Repetitions = repetitions;
             this.Transactions = transactions;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -143,7 +143,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
-        [DataMember(Name="title", EmitDefaultValue=false)]
+        [DataMember(Name="title", EmitDefaultValue=true)]
         public string Title { get; set; }
 
         /// <summary>
@@ -157,7 +157,7 @@ namespace FireflyIII.Model
         /// First time the recurring transaction will fire. Must be after today.
         /// </summary>
         /// <value>First time the recurring transaction will fire. Must be after today.</value>
-        [DataMember(Name="first_date", EmitDefaultValue=false)]
+        [DataMember(Name="first_date", EmitDefaultValue=true)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime FirstDate { get; set; }
 
@@ -241,7 +241,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

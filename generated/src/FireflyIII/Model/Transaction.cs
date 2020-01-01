@@ -53,7 +53,7 @@ namespace FireflyIII.Model
             }
 
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -83,7 +83,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Transactions
         /// </summary>
-        [DataMember(Name="transactions", EmitDefaultValue=false)]
+        [DataMember(Name="transactions", EmitDefaultValue=true)]
         public List<TransactionSplit> Transactions { get; set; }
 
         /// <summary>
@@ -102,7 +102,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

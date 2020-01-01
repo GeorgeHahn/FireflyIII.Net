@@ -83,7 +83,7 @@ namespace FireflyIII.Model
             this.TargetDate = targetDate;
             this.Notes = notes;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -99,14 +99,14 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
+        [DataMember(Name="name", EmitDefaultValue=true)]
         public string Name { get; set; }
 
         /// <summary>
         /// The ID of the asset account this piggy bank is connected to.
         /// </summary>
         /// <value>The ID of the asset account this piggy bank is connected to.</value>
-        [DataMember(Name="account_id", EmitDefaultValue=false)]
+        [DataMember(Name="account_id", EmitDefaultValue=true)]
         public int AccountId { get; set; }
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets TargetAmount
         /// </summary>
-        [DataMember(Name="target_amount", EmitDefaultValue=false)]
+        [DataMember(Name="target_amount", EmitDefaultValue=true)]
         public double TargetAmount { get; set; }
 
         /// <summary>
@@ -235,7 +235,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

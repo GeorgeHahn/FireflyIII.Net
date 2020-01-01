@@ -41,7 +41,7 @@ namespace FireflyIII.Model
             this.Data = data;
             this.Meta = meta;
         }
-        
+
         /// <summary>
         /// Gets or Sets Data
         /// </summary>
@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

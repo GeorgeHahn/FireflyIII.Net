@@ -41,7 +41,7 @@ namespace FireflyIII.Model
             this.Rel = rel;
             this.Uri = uri;
         }
-        
+
         /// <summary>
         /// Gets or Sets Rel
         /// </summary>
@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

@@ -41,7 +41,7 @@ namespace FireflyIII.Model
             this.Message = message;
             this.Errors = errors;
         }
-        
+
         /// <summary>
         /// Gets or Sets Message
         /// </summary>
@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

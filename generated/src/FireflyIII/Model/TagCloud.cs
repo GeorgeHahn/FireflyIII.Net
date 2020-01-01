@@ -39,7 +39,7 @@ namespace FireflyIII.Model
         {
             this.Tags = tags;
         }
-        
+
         /// <summary>
         /// Gets or Sets Tags
         /// </summary>
@@ -58,7 +58,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

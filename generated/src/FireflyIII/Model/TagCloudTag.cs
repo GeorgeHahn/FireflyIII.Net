@@ -45,7 +45,7 @@ namespace FireflyIII.Model
             this.Size = size;
             this.Relative = relative;
         }
-        
+
         /// <summary>
         /// The tag
         /// </summary>
@@ -89,7 +89,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

@@ -242,7 +242,7 @@ namespace FireflyIII.Model
         /// The type of thing this trigger responds to. A limited set is possible
         /// </summary>
         /// <value>The type of thing this trigger responds to. A limited set is possible</value>
-        [DataMember(Name="type", EmitDefaultValue=false)]
+        [DataMember(Name="type", EmitDefaultValue=true)]
         public TypeEnum Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="RuleTrigger" /> class.
@@ -272,7 +272,7 @@ namespace FireflyIII.Model
             this.Active = active;
             this.StopProcessing = stopProcessing;
         }
-        
+
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -295,7 +295,7 @@ namespace FireflyIII.Model
         /// The accompanying value the trigger responds to. This value is often mandatory, but this depends on the trigger.
         /// </summary>
         /// <value>The accompanying value the trigger responds to. This value is often mandatory, but this depends on the trigger.</value>
-        [DataMember(Name="value", EmitDefaultValue=false)]
+        [DataMember(Name="value", EmitDefaultValue=true)]
         public string Value { get; set; }
 
         /// <summary>
@@ -338,7 +338,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

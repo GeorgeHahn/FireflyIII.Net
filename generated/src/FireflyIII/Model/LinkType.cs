@@ -75,23 +75,23 @@ namespace FireflyIII.Model
             }
 
         }
-        
+
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
+        [DataMember(Name="name", EmitDefaultValue=true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets Inward
         /// </summary>
-        [DataMember(Name="inward", EmitDefaultValue=false)]
+        [DataMember(Name="inward", EmitDefaultValue=true)]
         public string Inward { get; set; }
 
         /// <summary>
         /// Gets or Sets Outward
         /// </summary>
-        [DataMember(Name="outward", EmitDefaultValue=false)]
+        [DataMember(Name="outward", EmitDefaultValue=true)]
         public string Outward { get; set; }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

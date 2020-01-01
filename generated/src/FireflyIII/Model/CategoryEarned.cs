@@ -51,7 +51,7 @@ namespace FireflyIII.Model
             this.CurrencyDecimalPlaces = currencyDecimalPlaces;
             this.Amount = amount;
         }
-        
+
         /// <summary>
         /// Gets or Sets Start
         /// </summary>
@@ -116,7 +116,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

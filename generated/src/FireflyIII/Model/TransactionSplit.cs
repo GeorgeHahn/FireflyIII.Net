@@ -113,10 +113,10 @@ namespace FireflyIII.Model
         /// <param name="budgetId">The budget ID for this transaction..</param>
         /// <param name="categoryId">The category ID for this transaction..</param>
         /// <param name="categoryName">The name of the category to be used. If the category is unknown, it will be created. If the ID and the name point to different categories, the ID overrules the name..</param>
-        /// <param name="sourceId">ID of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account. (required).</param>
+        /// <param name="sourceId">ID of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account..</param>
         /// <param name="sourceName">Name of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account. Can be used instead of the source_id. If the transaction is a deposit, the source_name can be filled in freely: the account will be created based on the name..</param>
         /// <param name="sourceType">sourceType.</param>
-        /// <param name="destinationId">ID of the destination account. For a deposit or a transfer, this must always be an asset account. For withdrawals this must be an expense account. (required).</param>
+        /// <param name="destinationId">ID of the destination account. For a deposit or a transfer, this must always be an asset account. For withdrawals this must be an expense account..</param>
         /// <param name="destinationName">Name of the destination account. You can submit the name instead of the ID. For everything except transfers, the account will be auto-generated if unknown, so submitting a name is enough..</param>
         /// <param name="destinationType">destinationType.</param>
         /// <param name="reconciled">If the transaction has been reconciled already. When you set this, the amount can no longer be edited by the user..</param>
@@ -143,7 +143,7 @@ namespace FireflyIII.Model
         /// <param name="dueDate">dueDate.</param>
         /// <param name="paymentDate">paymentDate.</param>
         /// <param name="invoiceDate">invoiceDate.</param>
-        public TransactionSplit(TypeEnum? type = default(TypeEnum?), DateTime date = default(DateTime), double amount = default(double), string description = default(string), int order = default(int), int currencyId = default(int), string currencyCode = default(string), double? foreignAmount = default(double?), int? foreignCurrencyId = default(int?), string foreignCurrencyCode = default(string), int? budgetId = default(int?), int? categoryId = default(int?), string categoryName = default(string), int sourceId = default(int), string sourceName = default(string), AccountTypeProperty sourceType = default(AccountTypeProperty), int destinationId = default(int), string destinationName = default(string), AccountTypeProperty destinationType = default(AccountTypeProperty), bool reconciled = default(bool), int piggyBankId = default(int), string piggyBankName = default(string), int? billId = default(int?), string billName = default(string), List<string> tags = default(List<string>), string notes = default(string), string internalReference = default(string), string externalId = default(string), string bunqPaymentId = default(string), string sepaCc = default(string), string sepaCtOp = default(string), string sepaCtId = default(string), string sepaDb = default(string), string sepaCountry = default(string), string sepaEp = default(string), string sepaCi = default(string), string sepaBatchId = default(string), DateTime? interestDate = default(DateTime?), DateTime? bookDate = default(DateTime?), DateTime? processDate = default(DateTime?), DateTime? dueDate = default(DateTime?), DateTime? paymentDate = default(DateTime?), DateTime? invoiceDate = default(DateTime?))
+        public TransactionSplit(TypeEnum? type = default(TypeEnum?), DateTime date = default(DateTime), double amount = default(double), string description = default(string), int? order = default(int?), int? currencyId = default(int?), string currencyCode = default(string), double? foreignAmount = default(double?), int? foreignCurrencyId = default(int?), string foreignCurrencyCode = default(string), int? budgetId = default(int?), int? categoryId = default(int?), string categoryName = default(string), int? sourceId = default(int?), string sourceName = default(string), AccountTypeProperty sourceType = default(AccountTypeProperty), int? destinationId = default(int?), string destinationName = default(string), AccountTypeProperty destinationType = default(AccountTypeProperty), bool? reconciled = default(bool?), int? piggyBankId = default(int?), string piggyBankName = default(string), int? billId = default(int?), string billName = default(string), List<string> tags = default(List<string>), string notes = default(string), string internalReference = default(string), string externalId = default(string), string bunqPaymentId = default(string), string sepaCc = default(string), string sepaCtOp = default(string), string sepaCtId = default(string), string sepaDb = default(string), string sepaCountry = default(string), string sepaEp = default(string), string sepaCi = default(string), string sepaBatchId = default(string), DateTime? interestDate = default(DateTime?), DateTime? bookDate = default(DateTime?), DateTime? processDate = default(DateTime?), DateTime? dueDate = default(DateTime?), DateTime? paymentDate = default(DateTime?), DateTime? invoiceDate = default(DateTime?))
         {
             // to ensure "date" is required (not null)
             if (date == null)
@@ -175,31 +175,22 @@ namespace FireflyIII.Model
                 this.Description = description;
             }
 
+            this.Order = order;
+            this.CurrencyId = currencyId;
+            this.CurrencyCode = currencyCode;
             this.ForeignAmount = foreignAmount;
             this.ForeignCurrencyId = foreignCurrencyId;
             this.ForeignCurrencyCode = foreignCurrencyCode;
             this.BudgetId = budgetId;
             this.CategoryId = categoryId;
-            // to ensure "sourceId" is required (not null)
-            if (sourceId == null)
-            {
-                throw new InvalidDataException("sourceId is a required property for TransactionSplit and cannot be null");
-            }
-            else
-            {
-                this.SourceId = sourceId;
-            }
-
-            // to ensure "destinationId" is required (not null)
-            if (destinationId == null)
-            {
-                throw new InvalidDataException("destinationId is a required property for TransactionSplit and cannot be null");
-            }
-            else
-            {
-                this.DestinationId = destinationId;
-            }
-
+            this.CategoryName = categoryName;
+            this.SourceId = sourceId;
+            this.SourceName = sourceName;
+            this.DestinationId = destinationId;
+            this.DestinationName = destinationName;
+            this.Reconciled = reconciled;
+            this.PiggyBankId = piggyBankId;
+            this.PiggyBankName = piggyBankName;
             this.BillId = billId;
             this.BillName = billName;
             this.Tags = tags;
@@ -230,8 +221,10 @@ namespace FireflyIII.Model
             this.BudgetId = budgetId;
             this.CategoryId = categoryId;
             this.CategoryName = categoryName;
+            this.SourceId = sourceId;
             this.SourceName = sourceName;
             this.SourceType = sourceType;
+            this.DestinationId = destinationId;
             this.DestinationName = destinationName;
             this.DestinationType = destinationType;
             this.Reconciled = reconciled;
@@ -259,7 +252,7 @@ namespace FireflyIII.Model
             this.PaymentDate = paymentDate;
             this.InvoiceDate = invoiceDate;
         }
-        
+
         /// <summary>
         /// User ID
         /// </summary>
@@ -278,7 +271,7 @@ namespace FireflyIII.Model
         /// Date of the transaction
         /// </summary>
         /// <value>Date of the transaction</value>
-        [DataMember(Name="date", EmitDefaultValue=false)]
+        [DataMember(Name="date", EmitDefaultValue=true)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime Date { get; set; }
 
@@ -286,14 +279,14 @@ namespace FireflyIII.Model
         /// Amount of the transaction.
         /// </summary>
         /// <value>Amount of the transaction.</value>
-        [DataMember(Name="amount", EmitDefaultValue=false)]
+        [DataMember(Name="amount", EmitDefaultValue=true)]
         public double Amount { get; set; }
 
         /// <summary>
         /// Description of the transaction. Will only be used if more than one split is submitted.
         /// </summary>
         /// <value>Description of the transaction. Will only be used if more than one split is submitted.</value>
-        [DataMember(Name="description", EmitDefaultValue=false)]
+        [DataMember(Name="description", EmitDefaultValue=true)]
         public string Description { get; set; }
 
         /// <summary>
@@ -301,14 +294,14 @@ namespace FireflyIII.Model
         /// </summary>
         /// <value>Order of this entry in the list of transactions.</value>
         [DataMember(Name="order", EmitDefaultValue=false)]
-        public int Order { get; set; }
+        public int? Order { get; set; }
 
         /// <summary>
         /// Currency ID. Default is the source account&#39;s currency, or the user&#39;s default currency. Can be used instead of currency_code.
         /// </summary>
         /// <value>Currency ID. Default is the source account&#39;s currency, or the user&#39;s default currency. Can be used instead of currency_code.</value>
         [DataMember(Name="currency_id", EmitDefaultValue=false)]
-        public int CurrencyId { get; set; }
+        public int? CurrencyId { get; set; }
 
         /// <summary>
         /// Currency code. Default is the source account&#39;s currency, or the user&#39;s default currency. Can be used instead of currency_id.
@@ -340,55 +333,55 @@ namespace FireflyIII.Model
         /// The amount in a foreign currency.
         /// </summary>
         /// <value>The amount in a foreign currency.</value>
-        [DataMember(Name="foreign_amount", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_amount", EmitDefaultValue=false)]
         public double? ForeignAmount { get; set; }
 
         /// <summary>
         /// Currency ID. Default is null. Is required when you submit a foreign amount.
         /// </summary>
         /// <value>Currency ID. Default is null. Is required when you submit a foreign amount.</value>
-        [DataMember(Name="foreign_currency_id", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_id", EmitDefaultValue=false)]
         public int? ForeignCurrencyId { get; set; }
 
         /// <summary>
         /// Currency code. Default is NULL. Can be used instead of the foreign_currency_id, but either is required when submitting a foreign amount.
         /// </summary>
         /// <value>Currency code. Default is NULL. Can be used instead of the foreign_currency_id, but either is required when submitting a foreign amount.</value>
-        [DataMember(Name="foreign_currency_code", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_code", EmitDefaultValue=false)]
         public string ForeignCurrencyCode { get; set; }
 
         /// <summary>
         /// Gets or Sets ForeignCurrencySymbol
         /// </summary>
-        [DataMember(Name="foreign_currency_symbol", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_symbol", EmitDefaultValue=false)]
         public string ForeignCurrencySymbol { get; private set; }
 
         /// <summary>
         /// Number of decimals in the currency
         /// </summary>
         /// <value>Number of decimals in the currency</value>
-        [DataMember(Name="foreign_currency_decimal_places", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_decimal_places", EmitDefaultValue=false)]
         public int? ForeignCurrencyDecimalPlaces { get; private set; }
 
         /// <summary>
         /// The budget ID for this transaction.
         /// </summary>
         /// <value>The budget ID for this transaction.</value>
-        [DataMember(Name="budget_id", EmitDefaultValue=true)]
+        [DataMember(Name="budget_id", EmitDefaultValue=false)]
         public int? BudgetId { get; set; }
 
         /// <summary>
         /// The name of the budget to be used. If the budget name is unknown, the ID will be used or the value will be ignored.
         /// </summary>
         /// <value>The name of the budget to be used. If the budget name is unknown, the ID will be used or the value will be ignored.</value>
-        [DataMember(Name="budget_name", EmitDefaultValue=true)]
+        [DataMember(Name="budget_name", EmitDefaultValue=false)]
         public string BudgetName { get; private set; }
 
         /// <summary>
         /// The category ID for this transaction.
         /// </summary>
         /// <value>The category ID for this transaction.</value>
-        [DataMember(Name="category_id", EmitDefaultValue=true)]
+        [DataMember(Name="category_id", EmitDefaultValue=false)]
         public int? CategoryId { get; set; }
 
         /// <summary>
@@ -403,7 +396,7 @@ namespace FireflyIII.Model
         /// </summary>
         /// <value>ID of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account.</value>
         [DataMember(Name="source_id", EmitDefaultValue=false)]
-        public int SourceId { get; set; }
+        public int? SourceId { get; set; }
 
         /// <summary>
         /// Name of the source account. For a withdrawal or a transfer, this must always be an asset account. For deposits, this must be a revenue account. Can be used instead of the source_id. If the transaction is a deposit, the source_name can be filled in freely: the account will be created based on the name.
@@ -415,7 +408,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets SourceIban
         /// </summary>
-        [DataMember(Name="source_iban", EmitDefaultValue=true)]
+        [DataMember(Name="source_iban", EmitDefaultValue=false)]
         public string SourceIban { get; private set; }
 
         /// <summary>
@@ -423,7 +416,7 @@ namespace FireflyIII.Model
         /// </summary>
         /// <value>ID of the destination account. For a deposit or a transfer, this must always be an asset account. For withdrawals this must be an expense account.</value>
         [DataMember(Name="destination_id", EmitDefaultValue=false)]
-        public int DestinationId { get; set; }
+        public int? DestinationId { get; set; }
 
         /// <summary>
         /// Name of the destination account. You can submit the name instead of the ID. For everything except transfers, the account will be auto-generated if unknown, so submitting a name is enough.
@@ -435,7 +428,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets DestinationIban
         /// </summary>
-        [DataMember(Name="destination_iban", EmitDefaultValue=true)]
+        [DataMember(Name="destination_iban", EmitDefaultValue=false)]
         public string DestinationIban { get; private set; }
 
         /// <summary>
@@ -443,14 +436,14 @@ namespace FireflyIII.Model
         /// </summary>
         /// <value>If the transaction has been reconciled already. When you set this, the amount can no longer be edited by the user.</value>
         [DataMember(Name="reconciled", EmitDefaultValue=false)]
-        public bool Reconciled { get; set; }
+        public bool? Reconciled { get; set; }
 
         /// <summary>
         /// Optional. Use either this or the piggy_bank_name
         /// </summary>
         /// <value>Optional. Use either this or the piggy_bank_name</value>
         [DataMember(Name="piggy_bank_id", EmitDefaultValue=false)]
-        public int PiggyBankId { get; set; }
+        public int? PiggyBankId { get; set; }
 
         /// <summary>
         /// Optional. Use either this or the piggy_bank_id
@@ -463,76 +456,76 @@ namespace FireflyIII.Model
         /// Optional. Use either this or the bill_name
         /// </summary>
         /// <value>Optional. Use either this or the bill_name</value>
-        [DataMember(Name="bill_id", EmitDefaultValue=true)]
+        [DataMember(Name="bill_id", EmitDefaultValue=false)]
         public int? BillId { get; set; }
 
         /// <summary>
         /// Optional. Use either this or the bill_id
         /// </summary>
         /// <value>Optional. Use either this or the bill_id</value>
-        [DataMember(Name="bill_name", EmitDefaultValue=true)]
+        [DataMember(Name="bill_name", EmitDefaultValue=false)]
         public string BillName { get; set; }
 
         /// <summary>
         /// Array of tags.
         /// </summary>
         /// <value>Array of tags.</value>
-        [DataMember(Name="tags", EmitDefaultValue=true)]
+        [DataMember(Name="tags", EmitDefaultValue=false)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// Gets or Sets Notes
         /// </summary>
-        [DataMember(Name="notes", EmitDefaultValue=true)]
+        [DataMember(Name="notes", EmitDefaultValue=false)]
         public string Notes { get; set; }
 
         /// <summary>
         /// Reference to internal reference of other systems.
         /// </summary>
         /// <value>Reference to internal reference of other systems.</value>
-        [DataMember(Name="internal_reference", EmitDefaultValue=true)]
+        [DataMember(Name="internal_reference", EmitDefaultValue=false)]
         public string InternalReference { get; set; }
 
         /// <summary>
         /// Reference to external ID in other systems.
         /// </summary>
         /// <value>Reference to external ID in other systems.</value>
-        [DataMember(Name="external_id", EmitDefaultValue=true)]
+        [DataMember(Name="external_id", EmitDefaultValue=false)]
         public string ExternalId { get; set; }
 
         /// <summary>
         /// System generated identifier for original creator of transaction.
         /// </summary>
         /// <value>System generated identifier for original creator of transaction.</value>
-        [DataMember(Name="original_source", EmitDefaultValue=true)]
+        [DataMember(Name="original_source", EmitDefaultValue=false)]
         public string OriginalSource { get; private set; }
 
         /// <summary>
         /// Reference to recurrence that made the transaction.
         /// </summary>
         /// <value>Reference to recurrence that made the transaction.</value>
-        [DataMember(Name="recurrence_id", EmitDefaultValue=true)]
+        [DataMember(Name="recurrence_id", EmitDefaultValue=false)]
         public int? RecurrenceId { get; private set; }
 
         /// <summary>
         /// Internal ID of bunq transaction.
         /// </summary>
         /// <value>Internal ID of bunq transaction.</value>
-        [DataMember(Name="bunq_payment_id", EmitDefaultValue=true)]
+        [DataMember(Name="bunq_payment_id", EmitDefaultValue=false)]
         public string BunqPaymentId { get; set; }
 
         /// <summary>
         /// Hash value of original import transaction (for duplicate detection).
         /// </summary>
         /// <value>Hash value of original import transaction (for duplicate detection).</value>
-        [DataMember(Name="import_hash_v2", EmitDefaultValue=true)]
+        [DataMember(Name="import_hash_v2", EmitDefaultValue=false)]
         public string ImportHashV2 { get; private set; }
 
         /// <summary>
         /// SEPA Clearing Code
         /// </summary>
         /// <value>SEPA Clearing Code</value>
-        [DataMember(Name="sepa_cc", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_cc", EmitDefaultValue=false)]
         public string SepaCc { get; set; }
 
         /// <summary>
@@ -546,83 +539,83 @@ namespace FireflyIII.Model
         /// SEPA end-to-end Identifier
         /// </summary>
         /// <value>SEPA end-to-end Identifier</value>
-        [DataMember(Name="sepa_ct_id", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_ct_id", EmitDefaultValue=false)]
         public string SepaCtId { get; set; }
 
         /// <summary>
         /// SEPA mandate identifier
         /// </summary>
         /// <value>SEPA mandate identifier</value>
-        [DataMember(Name="sepa_db", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_db", EmitDefaultValue=false)]
         public string SepaDb { get; set; }
 
         /// <summary>
         /// SEPA Country
         /// </summary>
         /// <value>SEPA Country</value>
-        [DataMember(Name="sepa_country", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_country", EmitDefaultValue=false)]
         public string SepaCountry { get; set; }
 
         /// <summary>
         /// SEPA External Purpose indicator
         /// </summary>
         /// <value>SEPA External Purpose indicator</value>
-        [DataMember(Name="sepa_ep", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_ep", EmitDefaultValue=false)]
         public string SepaEp { get; set; }
 
         /// <summary>
         /// SEPA Creditor Identifier
         /// </summary>
         /// <value>SEPA Creditor Identifier</value>
-        [DataMember(Name="sepa_ci", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_ci", EmitDefaultValue=false)]
         public string SepaCi { get; set; }
 
         /// <summary>
         /// SEPA Batch ID
         /// </summary>
         /// <value>SEPA Batch ID</value>
-        [DataMember(Name="sepa_batch_id", EmitDefaultValue=true)]
+        [DataMember(Name="sepa_batch_id", EmitDefaultValue=false)]
         public string SepaBatchId { get; set; }
 
         /// <summary>
         /// Gets or Sets InterestDate
         /// </summary>
-        [DataMember(Name="interest_date", EmitDefaultValue=true)]
+        [DataMember(Name="interest_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? InterestDate { get; set; }
 
         /// <summary>
         /// Gets or Sets BookDate
         /// </summary>
-        [DataMember(Name="book_date", EmitDefaultValue=true)]
+        [DataMember(Name="book_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? BookDate { get; set; }
 
         /// <summary>
         /// Gets or Sets ProcessDate
         /// </summary>
-        [DataMember(Name="process_date", EmitDefaultValue=true)]
+        [DataMember(Name="process_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? ProcessDate { get; set; }
 
         /// <summary>
         /// Gets or Sets DueDate
         /// </summary>
-        [DataMember(Name="due_date", EmitDefaultValue=true)]
+        [DataMember(Name="due_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? DueDate { get; set; }
 
         /// <summary>
         /// Gets or Sets PaymentDate
         /// </summary>
-        [DataMember(Name="payment_date", EmitDefaultValue=true)]
+        [DataMember(Name="payment_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? PaymentDate { get; set; }
 
         /// <summary>
         /// Gets or Sets InvoiceDate
         /// </summary>
-        [DataMember(Name="invoice_date", EmitDefaultValue=true)]
+        [DataMember(Name="invoice_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? InvoiceDate { get; set; }
 
@@ -693,7 +686,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>
@@ -752,11 +745,13 @@ namespace FireflyIII.Model
                 ) && 
                 (
                     this.Order == input.Order ||
-                    this.Order.Equals(input.Order)
+                    (this.Order != null &&
+                    this.Order.Equals(input.Order))
                 ) && 
                 (
                     this.CurrencyId == input.CurrencyId ||
-                    this.CurrencyId.Equals(input.CurrencyId)
+                    (this.CurrencyId != null &&
+                    this.CurrencyId.Equals(input.CurrencyId))
                 ) && 
                 (
                     this.CurrencyCode == input.CurrencyCode ||
@@ -824,7 +819,8 @@ namespace FireflyIII.Model
                 ) && 
                 (
                     this.SourceId == input.SourceId ||
-                    this.SourceId.Equals(input.SourceId)
+                    (this.SourceId != null &&
+                    this.SourceId.Equals(input.SourceId))
                 ) && 
                 (
                     this.SourceName == input.SourceName ||
@@ -842,7 +838,8 @@ namespace FireflyIII.Model
                 ) && 
                 (
                     this.DestinationId == input.DestinationId ||
-                    this.DestinationId.Equals(input.DestinationId)
+                    (this.DestinationId != null &&
+                    this.DestinationId.Equals(input.DestinationId))
                 ) && 
                 (
                     this.DestinationName == input.DestinationName ||
@@ -860,11 +857,13 @@ namespace FireflyIII.Model
                 ) && 
                 (
                     this.Reconciled == input.Reconciled ||
-                    this.Reconciled.Equals(input.Reconciled)
+                    (this.Reconciled != null &&
+                    this.Reconciled.Equals(input.Reconciled))
                 ) && 
                 (
                     this.PiggyBankId == input.PiggyBankId ||
-                    this.PiggyBankId.Equals(input.PiggyBankId)
+                    (this.PiggyBankId != null &&
+                    this.PiggyBankId.Equals(input.PiggyBankId))
                 ) && 
                 (
                     this.PiggyBankName == input.PiggyBankName ||
@@ -1011,8 +1010,10 @@ namespace FireflyIII.Model
                 hashCode = hashCode * 59 + this.Amount.GetHashCode();
                 if (this.Description != null)
                     hashCode = hashCode * 59 + this.Description.GetHashCode();
-                hashCode = hashCode * 59 + this.Order.GetHashCode();
-                hashCode = hashCode * 59 + this.CurrencyId.GetHashCode();
+                if (this.Order != null)
+                    hashCode = hashCode * 59 + this.Order.GetHashCode();
+                if (this.CurrencyId != null)
+                    hashCode = hashCode * 59 + this.CurrencyId.GetHashCode();
                 if (this.CurrencyCode != null)
                     hashCode = hashCode * 59 + this.CurrencyCode.GetHashCode();
                 if (this.CurrencySymbol != null)
@@ -1038,20 +1039,24 @@ namespace FireflyIII.Model
                     hashCode = hashCode * 59 + this.CategoryId.GetHashCode();
                 if (this.CategoryName != null)
                     hashCode = hashCode * 59 + this.CategoryName.GetHashCode();
-                hashCode = hashCode * 59 + this.SourceId.GetHashCode();
+                if (this.SourceId != null)
+                    hashCode = hashCode * 59 + this.SourceId.GetHashCode();
                 if (this.SourceName != null)
                     hashCode = hashCode * 59 + this.SourceName.GetHashCode();
                 if (this.SourceIban != null)
                     hashCode = hashCode * 59 + this.SourceIban.GetHashCode();
                 hashCode = hashCode * 59 + this.SourceType.GetHashCode();
-                hashCode = hashCode * 59 + this.DestinationId.GetHashCode();
+                if (this.DestinationId != null)
+                    hashCode = hashCode * 59 + this.DestinationId.GetHashCode();
                 if (this.DestinationName != null)
                     hashCode = hashCode * 59 + this.DestinationName.GetHashCode();
                 if (this.DestinationIban != null)
                     hashCode = hashCode * 59 + this.DestinationIban.GetHashCode();
                 hashCode = hashCode * 59 + this.DestinationType.GetHashCode();
-                hashCode = hashCode * 59 + this.Reconciled.GetHashCode();
-                hashCode = hashCode * 59 + this.PiggyBankId.GetHashCode();
+                if (this.Reconciled != null)
+                    hashCode = hashCode * 59 + this.Reconciled.GetHashCode();
+                if (this.PiggyBankId != null)
+                    hashCode = hashCode * 59 + this.PiggyBankId.GetHashCode();
                 if (this.PiggyBankName != null)
                     hashCode = hashCode * 59 + this.PiggyBankName.GetHashCode();
                 if (this.BillId != null)

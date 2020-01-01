@@ -53,11 +53,11 @@ namespace FireflyIII.Model
             }
 
         }
-        
+
         /// <summary>
         /// Gets or Sets Data
         /// </summary>
-        [DataMember(Name="data", EmitDefaultValue=false)]
+        [DataMember(Name="data", EmitDefaultValue=true)]
         public SystemInfoData Data { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

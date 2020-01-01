@@ -170,7 +170,7 @@ namespace FireflyIII.Model
         /// The type of thing this action will do. A limited set is possible.
         /// </summary>
         /// <value>The type of thing this action will do. A limited set is possible.</value>
-        [DataMember(Name="type", EmitDefaultValue=false)]
+        [DataMember(Name="type", EmitDefaultValue=true)]
         public TypeEnum Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="RuleAction" /> class.
@@ -193,7 +193,7 @@ namespace FireflyIII.Model
             this.Active = active;
             this.StopProcessing = stopProcessing;
         }
-        
+
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
@@ -259,7 +259,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

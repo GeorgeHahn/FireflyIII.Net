@@ -43,7 +43,7 @@ namespace FireflyIII.Model
             this.Meta = meta;
             this.Links = links;
         }
-        
+
         /// <summary>
         /// Gets or Sets Data
         /// </summary>
@@ -76,7 +76,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

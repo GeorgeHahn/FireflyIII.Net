@@ -57,7 +57,7 @@ namespace FireflyIII.Model
             this.LocalIcon = localIcon;
             this.SubTitle = subTitle;
         }
-        
+
         /// <summary>
         /// This is a reference to the type of info shared, not influenced by translations or user preferences.
         /// </summary>
@@ -147,7 +147,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

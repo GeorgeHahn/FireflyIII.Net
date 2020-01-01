@@ -74,7 +74,7 @@ namespace FireflyIII.Model
         /// How often the bill must be paid.
         /// </summary>
         /// <value>How often the bill must be paid.</value>
-        [DataMember(Name="repeat_freq", EmitDefaultValue=false)]
+        [DataMember(Name="repeat_freq", EmitDefaultValue=true)]
         public RepeatFreqEnum RepeatFreq { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Bill" /> class.
@@ -143,7 +143,7 @@ namespace FireflyIII.Model
             this.Active = active;
             this.Notes = notes;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -185,25 +185,25 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
+        [DataMember(Name="name", EmitDefaultValue=true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets AmountMin
         /// </summary>
-        [DataMember(Name="amount_min", EmitDefaultValue=false)]
+        [DataMember(Name="amount_min", EmitDefaultValue=true)]
         public double AmountMin { get; set; }
 
         /// <summary>
         /// Gets or Sets AmountMax
         /// </summary>
-        [DataMember(Name="amount_max", EmitDefaultValue=false)]
+        [DataMember(Name="amount_max", EmitDefaultValue=true)]
         public double AmountMax { get; set; }
 
         /// <summary>
         /// Gets or Sets Date
         /// </summary>
-        [DataMember(Name="date", EmitDefaultValue=false)]
+        [DataMember(Name="date", EmitDefaultValue=true)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime Date { get; set; }
 
@@ -277,7 +277,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

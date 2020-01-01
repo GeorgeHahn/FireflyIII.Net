@@ -90,7 +90,7 @@ namespace FireflyIII.Model
             this.CurrencyId = currencyId;
             this.CurrencyCode = currencyCode;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -133,14 +133,14 @@ namespace FireflyIII.Model
         /// The budget ID of the associated budget.
         /// </summary>
         /// <value>The budget ID of the associated budget.</value>
-        [DataMember(Name="budget_id", EmitDefaultValue=false)]
+        [DataMember(Name="budget_id", EmitDefaultValue=true)]
         public int BudgetId { get; set; }
 
         /// <summary>
         /// Start date of the budget limit.
         /// </summary>
         /// <value>Start date of the budget limit.</value>
-        [DataMember(Name="start", EmitDefaultValue=false)]
+        [DataMember(Name="start", EmitDefaultValue=true)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime Start { get; set; }
 
@@ -148,14 +148,14 @@ namespace FireflyIII.Model
         /// End date of the budget limit.
         /// </summary>
         /// <value>End date of the budget limit.</value>
-        [DataMember(Name="end", EmitDefaultValue=false)]
+        [DataMember(Name="end", EmitDefaultValue=true)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime End { get; set; }
 
         /// <summary>
         /// Gets or Sets Amount
         /// </summary>
-        [DataMember(Name="amount", EmitDefaultValue=false)]
+        [DataMember(Name="amount", EmitDefaultValue=true)]
         public double Amount { get; set; }
 
         /// <summary>
@@ -186,7 +186,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

@@ -97,35 +97,35 @@ namespace FireflyIII.Model
             }
 
         }
-        
+
         /// <summary>
         /// Gets or Sets Version
         /// </summary>
-        [DataMember(Name="version", EmitDefaultValue=false)]
+        [DataMember(Name="version", EmitDefaultValue=true)]
         public string Version { get; set; }
 
         /// <summary>
         /// Gets or Sets ApiVersion
         /// </summary>
-        [DataMember(Name="api_version", EmitDefaultValue=false)]
+        [DataMember(Name="api_version", EmitDefaultValue=true)]
         public string ApiVersion { get; set; }
 
         /// <summary>
         /// Gets or Sets PhpVersion
         /// </summary>
-        [DataMember(Name="php_version", EmitDefaultValue=false)]
+        [DataMember(Name="php_version", EmitDefaultValue=true)]
         public string PhpVersion { get; set; }
 
         /// <summary>
         /// Gets or Sets Os
         /// </summary>
-        [DataMember(Name="os", EmitDefaultValue=false)]
+        [DataMember(Name="os", EmitDefaultValue=true)]
         public string Os { get; set; }
 
         /// <summary>
         /// Gets or Sets Driver
         /// </summary>
-        [DataMember(Name="driver", EmitDefaultValue=false)]
+        [DataMember(Name="driver", EmitDefaultValue=true)]
         public string Driver { get; set; }
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

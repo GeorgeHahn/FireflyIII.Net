@@ -53,12 +53,12 @@ namespace FireflyIII.Model
             }
 
         }
-        
+
         /// <summary>
         /// Can be a number or a boolean. This depends on the actual configuration value.
         /// </summary>
         /// <value>Can be a number or a boolean. This depends on the actual configuration value.</value>
-        [DataMember(Name="value", EmitDefaultValue=false)]
+        [DataMember(Name="value", EmitDefaultValue=true)]
         public string Value { get; set; }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

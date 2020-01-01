@@ -45,7 +45,7 @@ namespace FireflyIII.Model
             this.Attributes = attributes;
             this.Links = links;
         }
-        
+
         /// <summary>
         /// Immutable value indicating the object type.
         /// </summary>
@@ -86,7 +86,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

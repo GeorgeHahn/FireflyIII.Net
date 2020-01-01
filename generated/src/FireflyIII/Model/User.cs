@@ -50,7 +50,7 @@ namespace FireflyIII.Model
         /// If you say the user must be blocked, this will be the reason code.
         /// </summary>
         /// <value>If you say the user must be blocked, this will be the reason code.</value>
-        [DataMember(Name="blocked_code", EmitDefaultValue=true)]
+        [DataMember(Name="blocked_code", EmitDefaultValue=false)]
         public BlockedCodeEnum? BlockedCode { get; set; }
         /// <summary>
         /// Role for the new user. Can be empty or omitted.
@@ -77,7 +77,7 @@ namespace FireflyIII.Model
         /// Role for the new user. Can be empty or omitted.
         /// </summary>
         /// <value>Role for the new user. Can be empty or omitted.</value>
-        [DataMember(Name="role", EmitDefaultValue=true)]
+        [DataMember(Name="role", EmitDefaultValue=false)]
         public RoleEnum? Role { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="User" /> class.
@@ -109,7 +109,7 @@ namespace FireflyIII.Model
             this.BlockedCode = blockedCode;
             this.Role = role;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -126,7 +126,7 @@ namespace FireflyIII.Model
         /// The new users email address.
         /// </summary>
         /// <value>The new users email address.</value>
-        [DataMember(Name="email", EmitDefaultValue=false)]
+        [DataMember(Name="email", EmitDefaultValue=true)]
         public string Email { get; set; }
 
         /// <summary>
@@ -153,7 +153,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

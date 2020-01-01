@@ -65,7 +65,7 @@ namespace FireflyIII.Model
             this.Rate = rate;
             this.Amount = amount;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -177,7 +177,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

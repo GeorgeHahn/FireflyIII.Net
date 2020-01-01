@@ -39,7 +39,7 @@ namespace FireflyIII.Model
         {
             this.Key = key;
         }
-        
+
         /// <summary>
         /// The key is the label of the value, so for example: &#39;2018-01-01&#39; &#x3D;&gt; 13 or &#39;Groceries&#39; &#x3D;&gt; -123.
         /// </summary>
@@ -59,7 +59,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

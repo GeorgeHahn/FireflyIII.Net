@@ -53,7 +53,7 @@ namespace FireflyIII.Model
             }
 
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -76,7 +76,7 @@ namespace FireflyIII.Model
         /// This field can also be an array
         /// </summary>
         /// <value>This field can also be an array</value>
-        [DataMember(Name="data", EmitDefaultValue=false)]
+        [DataMember(Name="data", EmitDefaultValue=true)]
         public string Data { get; set; }
 
         /// <summary>
@@ -94,7 +94,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

@@ -41,7 +41,7 @@ namespace FireflyIII.Model
             this._0 = _0;
             this.Self = self;
         }
-        
+
         /// <summary>
         /// Gets or Sets _0
         /// </summary>
@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

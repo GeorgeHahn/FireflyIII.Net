@@ -46,7 +46,7 @@ namespace FireflyIII.Model
             this.LastUpdateCheck = lastUpdateCheck;
             this.SingleUserMode = singleUserMode;
         }
-        
+
         /// <summary>
         /// Gets or Sets IsDemoSite
         /// </summary>
@@ -57,7 +57,7 @@ namespace FireflyIII.Model
         /// If the user has given permission to check for updates. - null &#x3D; never asked. - -1 &#x3D; never asked. - 0 &#x3D; no permission. - 1 &#x3D; permission 
         /// </summary>
         /// <value>If the user has given permission to check for updates. - null &#x3D; never asked. - -1 &#x3D; never asked. - 0 &#x3D; no permission. - 1 &#x3D; permission </value>
-        [DataMember(Name="permission_update_check", EmitDefaultValue=true)]
+        [DataMember(Name="permission_update_check", EmitDefaultValue=false)]
         public int? PermissionUpdateCheck { get; set; }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

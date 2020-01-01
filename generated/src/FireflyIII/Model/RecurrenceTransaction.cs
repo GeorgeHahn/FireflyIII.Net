@@ -112,25 +112,25 @@ namespace FireflyIII.Model
             this.PiggyBankId = piggyBankId;
             this.PiggyBankName = piggyBankName;
         }
-        
+
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name="description", EmitDefaultValue=false)]
+        [DataMember(Name="description", EmitDefaultValue=true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Amount of the transaction.
         /// </summary>
         /// <value>Amount of the transaction.</value>
-        [DataMember(Name="amount", EmitDefaultValue=false)]
+        [DataMember(Name="amount", EmitDefaultValue=true)]
         public double Amount { get; set; }
 
         /// <summary>
         /// Foreign amount of the transaction.
         /// </summary>
         /// <value>Foreign amount of the transaction.</value>
-        [DataMember(Name="foreign_amount", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_amount", EmitDefaultValue=false)]
         public double? ForeignAmount { get; set; }
 
         /// <summary>
@@ -164,27 +164,27 @@ namespace FireflyIII.Model
         /// Submit either a foreign_currency_id or a foreign_currency_code, or neither.
         /// </summary>
         /// <value>Submit either a foreign_currency_id or a foreign_currency_code, or neither.</value>
-        [DataMember(Name="foreign_currency_id", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_id", EmitDefaultValue=false)]
         public int? ForeignCurrencyId { get; set; }
 
         /// <summary>
         /// Submit either a foreign_currency_id or a foreign_currency_code, or neither.
         /// </summary>
         /// <value>Submit either a foreign_currency_id or a foreign_currency_code, or neither.</value>
-        [DataMember(Name="foreign_currency_code", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_code", EmitDefaultValue=false)]
         public string ForeignCurrencyCode { get; set; }
 
         /// <summary>
         /// Gets or Sets ForeignCurrencySymbol
         /// </summary>
-        [DataMember(Name="foreign_currency_symbol", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_symbol", EmitDefaultValue=false)]
         public string ForeignCurrencySymbol { get; private set; }
 
         /// <summary>
         /// Number of decimals in the currency
         /// </summary>
         /// <value>Number of decimals in the currency</value>
-        [DataMember(Name="foreign_currency_decimal_places", EmitDefaultValue=true)]
+        [DataMember(Name="foreign_currency_decimal_places", EmitDefaultValue=false)]
         public int? ForeignCurrencyDecimalPlaces { get; private set; }
 
         /// <summary>
@@ -198,7 +198,7 @@ namespace FireflyIII.Model
         /// The name of the budget to be used. If the budget name is unknown, the ID will be used or the value will be ignored.
         /// </summary>
         /// <value>The name of the budget to be used. If the budget name is unknown, the ID will be used or the value will be ignored.</value>
-        [DataMember(Name="budget_name", EmitDefaultValue=true)]
+        [DataMember(Name="budget_name", EmitDefaultValue=false)]
         public string BudgetName { get; private set; }
 
         /// <summary>
@@ -232,7 +232,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets SourceIban
         /// </summary>
-        [DataMember(Name="source_iban", EmitDefaultValue=true)]
+        [DataMember(Name="source_iban", EmitDefaultValue=false)]
         public string SourceIban { get; private set; }
 
         /// <summary>
@@ -252,14 +252,14 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets DestinationIban
         /// </summary>
-        [DataMember(Name="destination_iban", EmitDefaultValue=true)]
+        [DataMember(Name="destination_iban", EmitDefaultValue=false)]
         public string DestinationIban { get; private set; }
 
         /// <summary>
         /// Array of tags.
         /// </summary>
         /// <value>Array of tags.</value>
-        [DataMember(Name="tags", EmitDefaultValue=true)]
+        [DataMember(Name="tags", EmitDefaultValue=false)]
         public List<string> Tags { get; set; }
 
         /// <summary>
@@ -313,7 +313,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

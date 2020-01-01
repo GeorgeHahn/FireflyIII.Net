@@ -47,7 +47,7 @@ namespace FireflyIII.Model
             this.CurrencySymbol = currencySymbol;
             this.CurrencyDecimalPlaces = currencyDecimalPlaces;
         }
-        
+
         /// <summary>
         /// The amount spent.
         /// </summary>
@@ -96,7 +96,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

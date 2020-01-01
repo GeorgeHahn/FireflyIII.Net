@@ -43,7 +43,7 @@ namespace FireflyIII.Model
             this.First = first;
             this.Last = last;
         }
-        
+
         /// <summary>
         /// Gets or Sets Self
         /// </summary>
@@ -76,7 +76,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

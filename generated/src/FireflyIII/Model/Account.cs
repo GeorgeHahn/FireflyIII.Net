@@ -98,7 +98,7 @@ namespace FireflyIII.Model
         /// Can only be one one these account types. import, initial-balance and reconciliation cannot be set manually.
         /// </summary>
         /// <value>Can only be one one these account types. import, initial-balance and reconciliation cannot be set manually.</value>
-        [DataMember(Name="type", EmitDefaultValue=false)]
+        [DataMember(Name="type", EmitDefaultValue=true)]
         public TypeEnum Type { get; set; }
         /// <summary>
         /// Is only mandatory when the type is asset.
@@ -143,7 +143,7 @@ namespace FireflyIII.Model
         /// Is only mandatory when the type is asset.
         /// </summary>
         /// <value>Is only mandatory when the type is asset.</value>
-        [DataMember(Name="account_role", EmitDefaultValue=false)]
+        [DataMember(Name="account_role", EmitDefaultValue=true)]
         public AccountRoleEnum AccountRole { get; set; }
         /// <summary>
         /// Mandatory when the account_role is ccAsset. Can only be monthlyFull.
@@ -164,7 +164,7 @@ namespace FireflyIII.Model
         /// Mandatory when the account_role is ccAsset. Can only be monthlyFull.
         /// </summary>
         /// <value>Mandatory when the account_role is ccAsset. Can only be monthlyFull.</value>
-        [DataMember(Name="credit_card_type", EmitDefaultValue=true)]
+        [DataMember(Name="credit_card_type", EmitDefaultValue=false)]
         public CreditCardTypeEnum? CreditCardType { get; set; }
         /// <summary>
         /// Mandatory when type is liability. Specifies the exact type.
@@ -296,7 +296,7 @@ namespace FireflyIII.Model
             this.InterestPeriod = interestPeriod;
             this.Notes = notes;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -312,7 +312,7 @@ namespace FireflyIII.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
+        [DataMember(Name="name", EmitDefaultValue=true)]
         public string Name { get; set; }
 
         /// <summary>
@@ -409,7 +409,7 @@ namespace FireflyIII.Model
         /// Mandatory when the account_role is ccAsset. Moment at which CC payment installments are asked for by the bank.
         /// </summary>
         /// <value>Mandatory when the account_role is ccAsset. Moment at which CC payment installments are asked for by the bank.</value>
-        [DataMember(Name="monthly_payment_date", EmitDefaultValue=true)]
+        [DataMember(Name="monthly_payment_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime? MonthlyPaymentDate { get; set; }
 
@@ -479,7 +479,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

@@ -43,7 +43,7 @@ namespace FireflyIII.Model
             this.Id = id;
             this.Attributes = attributes;
         }
-        
+
         /// <summary>
         /// Immutable value
         /// </summary>
@@ -77,7 +77,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

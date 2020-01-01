@@ -79,7 +79,7 @@ namespace FireflyIII.Model
             this.LinkTypeName = linkTypeName;
             this.Notes = notes;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -96,7 +96,7 @@ namespace FireflyIII.Model
         /// The link type ID to use. You can also use the link_type_name field.
         /// </summary>
         /// <value>The link type ID to use. You can also use the link_type_name field.</value>
-        [DataMember(Name="link_type_id", EmitDefaultValue=false)]
+        [DataMember(Name="link_type_id", EmitDefaultValue=true)]
         public int LinkTypeId { get; set; }
 
         /// <summary>
@@ -110,14 +110,14 @@ namespace FireflyIII.Model
         /// The inward transaction transaction_journal_id for the link. This becomes the &#39;is paid by&#39; transaction of the set.
         /// </summary>
         /// <value>The inward transaction transaction_journal_id for the link. This becomes the &#39;is paid by&#39; transaction of the set.</value>
-        [DataMember(Name="inward_id", EmitDefaultValue=false)]
+        [DataMember(Name="inward_id", EmitDefaultValue=true)]
         public int InwardId { get; set; }
 
         /// <summary>
         /// The outward transaction transaction_journal_id for the link. This becomes the &#39;pays for&#39; transaction of the set.
         /// </summary>
         /// <value>The outward transaction transaction_journal_id for the link. This becomes the &#39;pays for&#39; transaction of the set.</value>
-        [DataMember(Name="outward_id", EmitDefaultValue=false)]
+        [DataMember(Name="outward_id", EmitDefaultValue=true)]
         public int OutwardId { get; set; }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>

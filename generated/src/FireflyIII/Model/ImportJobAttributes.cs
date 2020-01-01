@@ -63,7 +63,7 @@ namespace FireflyIII.Model
             this.Transactions = transactions;
             this.Errors = errors;
         }
-        
+
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
@@ -177,7 +177,7 @@ namespace FireflyIII.Model
             sb.Append("}\n");
             return sb.ToString();
         }
-  
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>
