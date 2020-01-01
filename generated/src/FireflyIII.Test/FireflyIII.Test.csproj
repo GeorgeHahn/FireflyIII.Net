@@ -30,7 +30,7 @@ Contact: thegrumpydictator@gmail.com
   </ItemGroup>
   <ItemGroup>
       <ProjectReference Include="..\FireflyIII\FireflyIII.csproj">
-          <Project>{24C41891-D880-4437-BF20-BE86C362589F}</Project>
+          <Project>FAE04EC0-301F-11D3-BF4B-00C04F79EFBC</Project>
           <Name>FireflyIII</Name>
       </ProjectReference>
   </ItemGroup>
