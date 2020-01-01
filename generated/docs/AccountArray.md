@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.AccountArray
+# FireflyIII.Model.AccountArray
 ## Properties
 
 Name | Type | Description | Notes

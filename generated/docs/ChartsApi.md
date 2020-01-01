@@ -1,4 +1,4 @@
-# FireflyIII.Net.Api.ChartsApi
+# FireflyIII.Api.ChartsApi
 
 All URIs are relative to *https://demo.firefly-iii.org*
 
@@ -23,9 +23,9 @@ This endpoint returns the data required to generate a pie chart for the availabl
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -99,9 +99,9 @@ This endpoint returns the data required to generate a chart that shows the user 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -173,9 +173,9 @@ This endpoint returns the data required to generate a chart with basic asset acc
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -247,9 +247,9 @@ This endpoint returns the data required to generate a chart that shows the user 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -321,9 +321,9 @@ This endpoint returns the data required to generate a bar chart for the expenses
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {

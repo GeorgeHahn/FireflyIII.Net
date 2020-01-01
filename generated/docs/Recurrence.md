@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.Recurrence
+# FireflyIII.Model.Recurrence
 ## Properties
 
 Name | Type | Description | Notes

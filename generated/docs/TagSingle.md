@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TagSingle
+# FireflyIII.Model.TagSingle
 ## Properties
 
 Name | Type | Description | Notes

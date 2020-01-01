@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.AccountRead
+# FireflyIII.Model.AccountRead
 ## Properties
 
 Name | Type | Description | Notes

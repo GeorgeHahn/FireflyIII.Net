@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.BillArray
+# FireflyIII.Model.BillArray
 ## Properties
 
 Name | Type | Description | Notes

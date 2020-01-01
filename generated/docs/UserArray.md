@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.UserArray
+# FireflyIII.Model.UserArray
 ## Properties
 
 Name | Type | Description | Notes

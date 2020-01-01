@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.CategoryArray
+# FireflyIII.Model.CategoryArray
 ## Properties
 
 Name | Type | Description | Notes

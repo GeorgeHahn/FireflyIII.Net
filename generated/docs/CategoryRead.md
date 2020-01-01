@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.CategoryRead
+# FireflyIII.Model.CategoryRead
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# FireflyIII.Net.Api.BudgetsApi
+# FireflyIII.Api.BudgetsApi
 
 All URIs are relative to *https://demo.firefly-iii.org*
 
@@ -30,9 +30,9 @@ Delete a budget. Transactions will not be deleted.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -102,9 +102,9 @@ Delete a budget limit.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -174,9 +174,9 @@ Get a single budget. If the start date and end date are submitted as well, the \
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -249,9 +249,9 @@ Get single budget limit.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -322,9 +322,9 @@ List all the budgets the user has made. If the start date and end date are submi
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -398,9 +398,9 @@ Get all budget limits for this budget and the money spent, and money left. You c
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -474,9 +474,9 @@ Get all transactions linked to a budget, possibly limited by start and end
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -556,9 +556,9 @@ List all the transactions within one budget limit. The start and end date are di
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -632,9 +632,9 @@ Creates a new budget. The data required can be submitted as a JSON body or as a 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -705,9 +705,9 @@ Store a new budget limit.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -780,9 +780,9 @@ Update existing budget. This endpoint cannot be used to set budget amount limits
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -855,9 +855,9 @@ Update existing budget limit.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {

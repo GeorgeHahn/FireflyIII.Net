@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.RuleGroupRead
+# FireflyIII.Model.RuleGroupRead
 ## Properties
 
 Name | Type | Description | Notes

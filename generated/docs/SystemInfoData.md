@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.SystemInfoData
+# FireflyIII.Model.SystemInfoData
 ## Properties
 
 Name | Type | Description | Notes

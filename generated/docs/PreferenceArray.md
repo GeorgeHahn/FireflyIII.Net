@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.PreferenceArray
+# FireflyIII.Model.PreferenceArray
 ## Properties
 
 Name | Type | Description | Notes

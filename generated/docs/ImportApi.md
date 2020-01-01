@@ -1,4 +1,4 @@
-# FireflyIII.Net.Api.ImportApi
+# FireflyIII.Api.ImportApi
 
 All URIs are relative to *https://demo.firefly-iii.org*
 
@@ -21,9 +21,9 @@ Show info on single import.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -94,9 +94,9 @@ List all imports
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -166,9 +166,9 @@ See summary
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {

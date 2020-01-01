@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.BillRead
+# FireflyIII.Model.BillRead
 ## Properties
 
 Name | Type | Description | Notes

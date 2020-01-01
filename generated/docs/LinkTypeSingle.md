@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.LinkTypeSingle
+# FireflyIII.Model.LinkTypeSingle
 ## Properties
 
 Name | Type | Description | Notes

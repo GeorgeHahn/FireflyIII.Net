@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.CategoryEarned
+# FireflyIII.Model.CategoryEarned
 ## Properties
 
 Name | Type | Description | Notes

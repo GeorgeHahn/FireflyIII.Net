@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TagRead
+# FireflyIII.Model.TagRead
 ## Properties
 
 Name | Type | Description | Notes

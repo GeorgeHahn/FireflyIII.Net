@@ -1,4 +1,4 @@
-# FireflyIII.Net.Api.CategoriesApi
+# FireflyIII.Api.CategoriesApi
 
 All URIs are relative to *https://demo.firefly-iii.org*
 
@@ -24,9 +24,9 @@ Delete a category. Transactions will not be removed.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -96,9 +96,9 @@ Get a single category.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -169,9 +169,9 @@ List all categories.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -241,9 +241,9 @@ List all transactions in a category, optionally limited to the date ranges speci
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -321,9 +321,9 @@ Creates a new category. The data required can be submitted as a JSON body or as 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -394,9 +394,9 @@ Update existing category.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {

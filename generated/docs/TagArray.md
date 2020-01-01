@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TagArray
+# FireflyIII.Model.TagArray
 ## Properties
 
 Name | Type | Description | Notes

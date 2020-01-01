@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.ExchangeRateArray
+# FireflyIII.Model.ExchangeRateArray
 ## Properties
 
 Name | Type | Description | Notes

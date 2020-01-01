@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.SystemConfigurationData
+# FireflyIII.Model.SystemConfigurationData
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.PiggyBankRead
+# FireflyIII.Model.PiggyBankRead
 ## Properties
 
 Name | Type | Description | Notes

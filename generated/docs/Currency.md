@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.Currency
+# FireflyIII.Model.Currency
 ## Properties
 
 Name | Type | Description | Notes

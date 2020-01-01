@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.ValidationError
+# FireflyIII.Model.ValidationError
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.AvailableBudgetSingle
+# FireflyIII.Model.AvailableBudgetSingle
 ## Properties
 
 Name | Type | Description | Notes

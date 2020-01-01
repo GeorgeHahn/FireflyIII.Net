@@ -1,4 +1,4 @@
-# FireflyIII.Net.Api.PiggyBanksApi
+# FireflyIII.Api.PiggyBanksApi
 
 All URIs are relative to *https://demo.firefly-iii.org*
 
@@ -24,9 +24,9 @@ Delete a piggy bank.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -96,9 +96,9 @@ Get a single piggy bank.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -169,9 +169,9 @@ List all events linked to a piggy bank (adding and removing money).
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -243,9 +243,9 @@ List all piggy banks.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -315,9 +315,9 @@ Creates a new piggy bank. The data required can be submitted as a JSON body or a
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {
@@ -388,9 +388,9 @@ Update existing piggy bank.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.BudgetLimitRead
+# FireflyIII.Model.BudgetLimitRead
 ## Properties
 
 Name | Type | Description | Notes

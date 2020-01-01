@@ -1,4 +1,4 @@
-# FireflyIII.Net.Api.CurrencyExchangeRatesApi
+# FireflyIII.Api.CurrencyExchangeRatesApi
 
 All URIs are relative to *https://demo.firefly-iii.org*
 
@@ -19,9 +19,9 @@ Get an exchange rate. If Firefly III doesn't know the rate it will set the rate 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using FireflyIII.Net.Api;
-using FireflyIII.Net.Client;
-using FireflyIII.Net.Model;
+using FireflyIII.Api;
+using FireflyIII.Client;
+using FireflyIII.Model;
 
 namespace Example
 {

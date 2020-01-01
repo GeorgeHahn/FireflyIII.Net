@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.UserSingle
+# FireflyIII.Model.UserSingle
 ## Properties
 
 Name | Type | Description | Notes

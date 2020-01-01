@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.RuleGroup
+# FireflyIII.Model.RuleGroup
 ## Properties
 
 Name | Type | Description | Notes

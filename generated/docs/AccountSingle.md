@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.AccountSingle
+# FireflyIII.Model.AccountSingle
 ## Properties
 
 Name | Type | Description | Notes

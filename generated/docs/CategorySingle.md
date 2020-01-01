@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.CategorySingle
+# FireflyIII.Model.CategorySingle
 ## Properties
 
 Name | Type | Description | Notes

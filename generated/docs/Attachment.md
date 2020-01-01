@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.Attachment
+# FireflyIII.Model.Attachment
 ## Properties
 
 Name | Type | Description | Notes

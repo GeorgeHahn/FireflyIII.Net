@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.LinkTypeRead
+# FireflyIII.Model.LinkTypeRead
 ## Properties
 
 Name | Type | Description | Notes

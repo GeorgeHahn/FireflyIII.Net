@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.BillPaidDates
+# FireflyIII.Model.BillPaidDates
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.AvailableBudgetArray
+# FireflyIII.Model.AvailableBudgetArray
 ## Properties
 
 Name | Type | Description | Notes

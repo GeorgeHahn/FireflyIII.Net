@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.ChartDataSet
+# FireflyIII.Model.ChartDataSet
 ## Properties
 
 Name | Type | Description | Notes

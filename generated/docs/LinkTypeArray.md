@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.LinkTypeArray
+# FireflyIII.Model.LinkTypeArray
 ## Properties
 
 Name | Type | Description | Notes

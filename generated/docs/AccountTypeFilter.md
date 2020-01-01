@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.AccountTypeFilter
+# FireflyIII.Model.AccountTypeFilter
 ## Properties
 
 Name | Type | Description | Notes

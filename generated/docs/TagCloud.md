@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TagCloud
+# FireflyIII.Model.TagCloud
 ## Properties
 
 Name | Type | Description | Notes

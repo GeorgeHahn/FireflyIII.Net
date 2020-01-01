@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TransactionSplit
+# FireflyIII.Model.TransactionSplit
 ## Properties
 
 Name | Type | Description | Notes
@@ -15,12 +15,12 @@ Name | Type | Description | Notes
 **CurrencySymbol** | **string** |  | [optional] [readonly] 
 **CurrencyName** | **string** |  | [optional] [readonly] 
 **CurrencyDecimalPlaces** | **int** | Number of decimals used in this currency. | [optional] [readonly] 
-**ForeignAmount** | **double** | The amount in a foreign currency. | [optional] 
+**ForeignAmount** | **double?** | The amount in a foreign currency. | [optional] 
 **ForeignCurrencyId** | **int?** | Currency ID. Default is null. Is required when you submit a foreign amount. | [optional] 
 **ForeignCurrencyCode** | **string** | Currency code. Default is NULL. Can be used instead of the foreign_currency_id, but either is required when submitting a foreign amount. | [optional] 
 **ForeignCurrencySymbol** | **string** |  | [optional] [readonly] 
 **ForeignCurrencyDecimalPlaces** | **int?** | Number of decimals in the currency | [optional] [readonly] 
-**BudgetId** | **int** | The budget ID for this transaction. | [optional] 
+**BudgetId** | **int?** | The budget ID for this transaction. | [optional] 
 **BudgetName** | **string** | The name of the budget to be used. If the budget name is unknown, the ID will be used or the value will be ignored. | [optional] [readonly] 
 **CategoryId** | **int?** | The category ID for this transaction. | [optional] 
 **CategoryName** | **string** | The name of the category to be used. If the category is unknown, it will be created. If the ID and the name point to different categories, the ID overrules the name. | [optional] 

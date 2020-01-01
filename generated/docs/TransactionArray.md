@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TransactionArray
+# FireflyIII.Model.TransactionArray
 ## Properties
 
 Name | Type | Description | Notes

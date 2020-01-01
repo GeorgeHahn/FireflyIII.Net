@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.PiggyBankEvent
+# FireflyIII.Model.PiggyBankEvent
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.TransactionLinkSingle
+# FireflyIII.Model.TransactionLinkSingle
 ## Properties
 
 Name | Type | Description | Notes

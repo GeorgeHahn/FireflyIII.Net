@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.RecurrenceTransaction
+# FireflyIII.Model.RecurrenceTransaction
 ## Properties
 
 Name | Type | Description | Notes

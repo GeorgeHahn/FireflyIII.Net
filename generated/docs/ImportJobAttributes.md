@@ -1,4 +1,4 @@
-# FireflyIII.Net.Model.ImportJobAttributes
+# FireflyIII.Model.ImportJobAttributes
 ## Properties
 
 Name | Type | Description | Notes
