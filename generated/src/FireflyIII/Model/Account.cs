@@ -22,6 +22,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
 using OpenAPIDateConverter = FireflyIII.Client.OpenAPIDateConverter;
+using TolerantEnumConverter = FireflyIII.Client.TolerantEnumConverter;
 
 namespace FireflyIII.Model
 {
@@ -104,7 +105,7 @@ namespace FireflyIII.Model
         /// Is only mandatory when the type is asset.
         /// </summary>
         /// <value>Is only mandatory when the type is asset.</value>
-        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonConverter(typeof(TolerantEnumConverter))]
         public enum AccountRoleEnum
         {
             /// <summary>
@@ -337,14 +338,14 @@ namespace FireflyIII.Model
         /// Gets or Sets OpeningBalance
         /// </summary>
         [DataMember(Name="opening_balance", EmitDefaultValue=false)]
-        public double OpeningBalance { get; set; }
+        public double? OpeningBalance { get; set; }
 
         /// <summary>
         /// Gets or Sets OpeningBalanceDate
         /// </summary>
         [DataMember(Name="opening_balance_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
-        public DateTime OpeningBalanceDate { get; set; }
+        public DateTime? OpeningBalanceDate { get; set; }
 
         /// <summary>
         /// Gets or Sets VirtualBalance
@@ -418,7 +419,7 @@ namespace FireflyIII.Model
         /// </summary>
         /// <value>Mandatory when type is liability. Amount of money in the liability. Must be positive.</value>
         [DataMember(Name="liability_amount", EmitDefaultValue=false)]
-        public double LiabilityAmount { get; set; }
+        public double? LiabilityAmount { get; set; }
 
         /// <summary>
         /// Mandatory when type is liability. Start date for the liability.
@@ -426,14 +427,14 @@ namespace FireflyIII.Model
         /// <value>Mandatory when type is liability. Start date for the liability.</value>
         [DataMember(Name="liability_start_date", EmitDefaultValue=false)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
-        public DateTime LiabilityStartDate { get; set; }
+        public DateTime? LiabilityStartDate { get; set; }
 
         /// <summary>
         /// Mandatory when type is liability. Interest percentage.
         /// </summary>
         /// <value>Mandatory when type is liability. Interest percentage.</value>
         [DataMember(Name="interest", EmitDefaultValue=false)]
-        public float Interest { get; set; }
+        public float? Interest { get; set; }
 
         /// <summary>
         /// Gets or Sets Notes
