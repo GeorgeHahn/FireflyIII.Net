@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -67,7 +68,21 @@ namespace FireflyIII.Client
 
             return parameters;
         }
-        
+
+        /// <summary>
+        /// Gets the type of the attribute of.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="enumVal">The enum value.</param>
+        /// <returns></returns>
+        public static T GetAttributeOfType<T>(this Enum enumVal) where T : System.Attribute
+        {
+            var type = enumVal.GetType();
+            var memInfo = type.GetMember(enumVal.ToString());
+            var attributes = memInfo[0].GetCustomAttributes(typeof(T), false);
+            return (attributes.Length > 0) ? (T)attributes[0] : null;
+        }
+
         /// <summary>
         /// If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
         /// If parameter is a list, join the list with ",".
@@ -90,25 +105,26 @@ namespace FireflyIII.Client
                 // https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx#Anchor_8
                 // For example: 2009-06-15T13:45:30.0000000
                 return ((DateTimeOffset)obj).ToString((configuration ?? GlobalConfiguration.Instance).DateTimeFormat);
-            else
+            else if (obj is IList)
             {
-                if (obj is IList)
+                var list = obj as IList;
+                var flattenedString = new StringBuilder();
+                foreach (var param in list)
                 {
-                    var list = obj as IList;
-                    var flattenedString = new StringBuilder();
-                    foreach (var param in list)
-                    {
-                        if (flattenedString.Length > 0)
-                            flattenedString.Append(",");
-                        flattenedString.Append(param);
-                    }
-                    return flattenedString.ToString();
+                    if (flattenedString.Length > 0)
+                        flattenedString.Append(",");
+                    flattenedString.Append(param);
                 }
-                
-                return Convert.ToString (obj);
+                return flattenedString.ToString();
             }
+            else if(obj is Enum)
+            {
+                return (obj as Enum).GetAttributeOfType<EnumMemberAttribute>().Value;
+            }
+            else
+                return Convert.ToString(obj);
         }
-        
+
         /// <summary>
         /// Check if generic object is a collection.
         /// </summary>
@@ -118,7 +134,7 @@ namespace FireflyIII.Client
         {
             return value is IList || value is ICollection;
         }
-        
+
         /// <summary>
         /// URL encode a string
         /// Credit/Ref: https://github.com/restsharp/RestSharp/blob/master/RestSharp/Extensions/StringExtensions.cs#L50
@@ -171,7 +187,7 @@ namespace FireflyIII.Client
         /// <returns>Byte array</returns>
         public static byte[] ReadAsBytes(Stream inputStream)
         {
-            byte[] buf = new byte[16*1024];
+            byte[] buf = new byte[16 * 1024];
             using (MemoryStream ms = new MemoryStream())
             {
                 int count;
