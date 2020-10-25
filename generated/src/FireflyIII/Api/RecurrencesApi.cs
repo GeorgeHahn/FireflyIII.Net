@@ -486,7 +486,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse<Object> DeleteRecurrenceWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->DeleteRecurrence");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -504,7 +504,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -547,7 +547,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteRecurrenceAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->DeleteRecurrence");
 
 
@@ -566,7 +566,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -610,7 +610,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< RecurrenceSingle > GetRecurrenceWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->GetRecurrence");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -629,7 +629,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -673,7 +673,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RecurrenceSingle>> GetRecurrenceAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->GetRecurrence");
 
 
@@ -693,7 +693,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -880,7 +880,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< TransactionArray > ListTransactionByRecurrenceWithHttpInfo (int id, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->ListTransactionByRecurrence");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -899,7 +899,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -931,7 +931,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -991,7 +991,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<TransactionArray>> ListTransactionByRecurrenceAsyncWithHttpInfo (int id, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->ListTransactionByRecurrence");
 
 
@@ -1011,7 +1011,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -1043,7 +1043,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1333,7 +1333,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< RecurrenceSingle > UpdateRecurrenceWithHttpInfo (int id, Recurrence recurrence)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->UpdateRecurrence");
 
             // verify the required parameter 'recurrence' is set
@@ -1358,7 +1358,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = recurrence;
 
@@ -1405,7 +1405,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RecurrenceSingle>> UpdateRecurrenceAsyncWithHttpInfo (int id, Recurrence recurrence)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling RecurrencesApi->UpdateRecurrence");
 
             // verify the required parameter 'recurrence' is set
@@ -1431,7 +1431,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = recurrence;
 

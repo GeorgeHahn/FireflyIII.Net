@@ -478,7 +478,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse<Object> DeleteAttachmentWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->DeleteAttachment");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -496,7 +496,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -539,7 +539,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteAttachmentAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->DeleteAttachment");
 
 
@@ -558,7 +558,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -602,7 +602,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< System.IO.Stream > DownloadAttachmentWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->DownloadAttachment");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -621,7 +621,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -665,7 +665,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<System.IO.Stream>> DownloadAttachmentAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->DownloadAttachment");
 
 
@@ -685,7 +685,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -729,7 +729,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< AttachmentSingle > GetAttachmentWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->GetAttachment");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -748,7 +748,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -792,7 +792,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AttachmentSingle>> GetAttachmentAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->GetAttachment");
 
 
@@ -812,7 +812,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -1122,7 +1122,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< AttachmentSingle > UpdateAttachmentWithHttpInfo (int id, Attachment attachment)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->UpdateAttachment");
 
             // verify the required parameter 'attachment' is set
@@ -1147,7 +1147,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = attachment;
 
@@ -1194,7 +1194,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AttachmentSingle>> UpdateAttachmentAsyncWithHttpInfo (int id, Attachment attachment)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->UpdateAttachment");
 
             // verify the required parameter 'attachment' is set
@@ -1220,7 +1220,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = attachment;
 
@@ -1266,7 +1266,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse<Object> UploadAttachmentWithHttpInfo (int id, System.IO.Stream body = default(System.IO.Stream))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->UploadAttachment");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -1285,7 +1285,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = body;
 
@@ -1331,7 +1331,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> UploadAttachmentAsyncWithHttpInfo (int id, System.IO.Stream body = default(System.IO.Stream))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AttachmentsApi->UploadAttachment");
 
 
@@ -1351,7 +1351,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = body;
 

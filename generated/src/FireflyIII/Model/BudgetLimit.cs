@@ -48,7 +48,7 @@ namespace FireflyIII.Model
         public BudgetLimit(int currencyId = default(int), string currencyCode = default(string), int budgetId = default(int), DateTime start = default(DateTime), DateTime end = default(DateTime), double amount = default(double))
         {
             // to ensure "budgetId" is required (not null)
-            if (budgetId == null)
+            if (budgetId == 0)
             {
                 throw new InvalidDataException("budgetId is a required property for BudgetLimit and cannot be null");
             }
@@ -78,7 +78,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "amount" is required (not null)
-            if (amount == null)
+            if (amount == 0)
             {
                 throw new InvalidDataException("amount is a required property for BudgetLimit and cannot be null");
             }

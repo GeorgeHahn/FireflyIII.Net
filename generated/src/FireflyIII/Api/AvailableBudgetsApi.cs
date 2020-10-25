@@ -398,7 +398,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse<Object> DeleteAvailableBudgetWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AvailableBudgetsApi->DeleteAvailableBudget");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -416,7 +416,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -459,7 +459,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteAvailableBudgetAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AvailableBudgetsApi->DeleteAvailableBudget");
 
 
@@ -478,7 +478,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -522,7 +522,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< AvailableBudgetSingle > GetAvailableBudgetWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AvailableBudgetsApi->GetAvailableBudget");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -541,7 +541,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -585,7 +585,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AvailableBudgetSingle>> GetAvailableBudgetAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AvailableBudgetsApi->GetAvailableBudget");
 
 
@@ -605,7 +605,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -963,7 +963,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< AvailableBudgetSingle > UpdateAvailableBudgetWithHttpInfo (int id, AvailableBudget availableBudget)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AvailableBudgetsApi->UpdateAvailableBudget");
 
             // verify the required parameter 'availableBudget' is set
@@ -988,7 +988,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = availableBudget;
 
@@ -1035,7 +1035,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AvailableBudgetSingle>> UpdateAvailableBudgetAsyncWithHttpInfo (int id, AvailableBudget availableBudget)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AvailableBudgetsApi->UpdateAvailableBudget");
 
             // verify the required parameter 'availableBudget' is set
@@ -1061,7 +1061,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = availableBudget;
 

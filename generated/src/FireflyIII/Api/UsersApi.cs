@@ -390,7 +390,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse<Object> DeleteUserWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling UsersApi->DeleteUser");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -408,7 +408,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -451,7 +451,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteUserAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling UsersApi->DeleteUser");
 
 
@@ -470,7 +470,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -514,7 +514,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< UserSingle > GetUserWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetUser");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -533,7 +533,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -577,7 +577,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<UserSingle>> GetUserAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling UsersApi->GetUser");
 
 
@@ -597,7 +597,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -907,7 +907,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< UserSingle > UpdateUserWithHttpInfo (int id, User user)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling UsersApi->UpdateUser");
 
             // verify the required parameter 'user' is set
@@ -932,7 +932,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = user;
 
@@ -979,7 +979,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<UserSingle>> UpdateUserAsyncWithHttpInfo (int id, User user)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling UsersApi->UpdateUser");
 
             // verify the required parameter 'user' is set
@@ -1005,7 +1005,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = user;
 

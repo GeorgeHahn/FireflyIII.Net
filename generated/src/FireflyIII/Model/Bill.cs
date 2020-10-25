@@ -107,7 +107,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "amountMin" is required (not null)
-            if (amountMin == null)
+            if (amountMin == 0)
             {
                 throw new InvalidDataException("amountMin is a required property for Bill and cannot be null");
             }
@@ -117,7 +117,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "amountMax" is required (not null)
-            if (amountMax == null)
+            if (amountMax == 0)
             {
                 throw new InvalidDataException("amountMax is a required property for Bill and cannot be null");
             }

@@ -548,7 +548,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse<Object> DeleteBillWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->DeleteBill");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -566,7 +566,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -609,7 +609,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteBillAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->DeleteBill");
 
 
@@ -628,7 +628,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -676,7 +676,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< BillSingle > GetBillWithHttpInfo (int id, DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->GetBill");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -695,7 +695,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (start != null)
             {
@@ -763,7 +763,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<BillSingle>> GetBillAsyncWithHttpInfo (int id, DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->GetBill");
 
 
@@ -783,7 +783,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (start != null)
             {
@@ -849,7 +849,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< AttachmentArray > ListAttachmentByBillWithHttpInfo (int id, int? page = default(int?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->ListAttachmentByBill");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -868,7 +868,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -924,7 +924,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AttachmentArray>> ListAttachmentByBillAsyncWithHttpInfo (int id, int? page = default(int?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->ListAttachmentByBill");
 
 
@@ -944,7 +944,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -1181,7 +1181,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< RuleArray > ListRuleByBillWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->ListRuleByBill");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -1200,7 +1200,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -1244,7 +1244,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RuleArray>> ListRuleByBillAsyncWithHttpInfo (int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->ListRuleByBill");
 
 
@@ -1264,7 +1264,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -1314,7 +1314,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< TransactionArray > ListTransactionByBillWithHttpInfo (int id, DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->ListTransactionByBill");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -1333,7 +1333,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (start != null)
             {
@@ -1355,7 +1355,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1413,7 +1413,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<TransactionArray>> ListTransactionByBillAsyncWithHttpInfo (int id, DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->ListTransactionByBill");
 
 
@@ -1433,7 +1433,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (start != null)
             {
@@ -1455,7 +1455,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1638,7 +1638,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< BillSingle > UpdateBillWithHttpInfo (int id, Bill bill)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->UpdateBill");
 
             // verify the required parameter 'bill' is set
@@ -1663,7 +1663,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = bill;
 
@@ -1710,7 +1710,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<BillSingle>> UpdateBillAsyncWithHttpInfo (int id, Bill bill)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling BillsApi->UpdateBill");
 
             // verify the required parameter 'bill' is set
@@ -1736,7 +1736,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = bill;
 

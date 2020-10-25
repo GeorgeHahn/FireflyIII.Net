@@ -59,7 +59,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "accountId" is required (not null)
-            if (accountId == null)
+            if (accountId == 0)
             {
                 throw new InvalidDataException("accountId is a required property for PiggyBank and cannot be null");
             }
@@ -69,7 +69,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "targetAmount" is required (not null)
-            if (targetAmount == null)
+            if (targetAmount == 0)
             {
                 throw new InvalidDataException("targetAmount is a required property for PiggyBank and cannot be null");
             }

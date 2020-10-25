@@ -89,7 +89,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "ruleGroupId" is required (not null)
-            if (ruleGroupId == null)
+            if (ruleGroupId == 0)
             {
                 throw new InvalidDataException("ruleGroupId is a required property for Rule and cannot be null");
             }

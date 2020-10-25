@@ -47,7 +47,7 @@ namespace FireflyIII.Model
         public AvailableBudget(int currencyId = default(int), string currencyCode = default(string), double amount = default(double), DateTime start = default(DateTime), DateTime end = default(DateTime))
         {
             // to ensure "amount" is required (not null)
-            if (amount == null)
+            if (amount == 0)
             {
                 throw new InvalidDataException("amount is a required property for AvailableBudget and cannot be null");
             }

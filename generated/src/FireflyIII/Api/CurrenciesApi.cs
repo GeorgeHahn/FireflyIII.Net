@@ -36,7 +36,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        CurrencySingle DefaultCurrency (string code);
+        CurrencySingle DefaultCurrency(string code);
 
         /// <summary>
         /// Make currency default currency.
@@ -47,7 +47,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        ApiResponse<CurrencySingle> DefaultCurrencyWithHttpInfo (string code);
+        ApiResponse<CurrencySingle> DefaultCurrencyWithHttpInfo(string code);
         /// <summary>
         /// Delete a currency.
         /// </summary>
@@ -57,7 +57,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns></returns>
-        void DeleteCurrency (string code);
+        void DeleteCurrency(string code);
 
         /// <summary>
         /// Delete a currency.
@@ -68,7 +68,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteCurrencyWithHttpInfo (string code);
+        ApiResponse<Object> DeleteCurrencyWithHttpInfo(string code);
         /// <summary>
         /// Disable a currency.
         /// </summary>
@@ -78,7 +78,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        CurrencySingle DisableCurrency (int code);
+        CurrencySingle DisableCurrency(int code);
 
         /// <summary>
         /// Disable a currency.
@@ -89,7 +89,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        ApiResponse<CurrencySingle> DisableCurrencyWithHttpInfo (int code);
+        ApiResponse<CurrencySingle> DisableCurrencyWithHttpInfo(int code);
         /// <summary>
         /// Enable a single currency.
         /// </summary>
@@ -99,7 +99,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        CurrencySingle EnableCurrency (string code);
+        CurrencySingle EnableCurrency(string code);
 
         /// <summary>
         /// Enable a single currency.
@@ -110,7 +110,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        ApiResponse<CurrencySingle> EnableCurrencyWithHttpInfo (string code);
+        ApiResponse<CurrencySingle> EnableCurrencyWithHttpInfo(string code);
         /// <summary>
         /// Get a single currency.
         /// </summary>
@@ -120,7 +120,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        CurrencySingle GetCurrency (string code);
+        CurrencySingle GetCurrency(string code);
 
         /// <summary>
         /// Get a single currency.
@@ -131,7 +131,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        ApiResponse<CurrencySingle> GetCurrencyWithHttpInfo (string code);
+        ApiResponse<CurrencySingle> GetCurrencyWithHttpInfo(string code);
         /// <summary>
         /// List all accounts with this currency.
         /// </summary>
@@ -144,7 +144,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>AccountArray</returns>
-        AccountArray ListAccountByCurrency (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
+        AccountArray ListAccountByCurrency(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
 
         /// <summary>
         /// List all accounts with this currency.
@@ -158,7 +158,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>ApiResponse of AccountArray</returns>
-        ApiResponse<AccountArray> ListAccountByCurrencyWithHttpInfo (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
+        ApiResponse<AccountArray> ListAccountByCurrencyWithHttpInfo(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
         /// <summary>
         /// List all available budgets with this currency.
         /// </summary>
@@ -169,7 +169,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>AvailableBudgetArray</returns>
-        AvailableBudgetArray ListAvailableBudgetByCurrency (string code, int? page = default(int?));
+        AvailableBudgetArray ListAvailableBudgetByCurrency(string code, int? page = default(int?));
 
         /// <summary>
         /// List all available budgets with this currency.
@@ -181,7 +181,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>ApiResponse of AvailableBudgetArray</returns>
-        ApiResponse<AvailableBudgetArray> ListAvailableBudgetByCurrencyWithHttpInfo (string code, int? page = default(int?));
+        ApiResponse<AvailableBudgetArray> ListAvailableBudgetByCurrencyWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all bills with this currency.
         /// </summary>
@@ -192,7 +192,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>BillArray</returns>
-        BillArray ListBillByCurrency (string code, int? page = default(int?));
+        BillArray ListBillByCurrency(string code, int? page = default(int?));
 
         /// <summary>
         /// List all bills with this currency.
@@ -204,7 +204,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>ApiResponse of BillArray</returns>
-        ApiResponse<BillArray> ListBillByCurrencyWithHttpInfo (string code, int? page = default(int?));
+        ApiResponse<BillArray> ListBillByCurrencyWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all budget limits with this currency
         /// </summary>
@@ -217,7 +217,7 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>BudgetLimitArray</returns>
-        BudgetLimitArray ListBudgetLimitByCurrency (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        BudgetLimitArray ListBudgetLimitByCurrency(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
 
         /// <summary>
         /// List all budget limits with this currency
@@ -231,7 +231,7 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>ApiResponse of BudgetLimitArray</returns>
-        ApiResponse<BudgetLimitArray> ListBudgetLimitByCurrencyWithHttpInfo (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        ApiResponse<BudgetLimitArray> ListBudgetLimitByCurrencyWithHttpInfo(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
         /// <summary>
         /// List all currencies.
         /// </summary>
@@ -241,7 +241,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>CurrencyArray</returns>
-        CurrencyArray ListCurrency (int? page = default(int?));
+        CurrencyArray ListCurrency(int? page = default(int?));
 
         /// <summary>
         /// List all currencies.
@@ -252,7 +252,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>ApiResponse of CurrencyArray</returns>
-        ApiResponse<CurrencyArray> ListCurrencyWithHttpInfo (int? page = default(int?));
+        ApiResponse<CurrencyArray> ListCurrencyWithHttpInfo(int? page = default(int?));
         /// <summary>
         /// List all known exchange rates with (from or to) this currency.
         /// </summary>
@@ -266,7 +266,7 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>ExchangeRateArray</returns>
-        ExchangeRateArray ListExchangeRateByCurrency (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        ExchangeRateArray ListExchangeRateByCurrency(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
 
         /// <summary>
         /// List all known exchange rates with (from or to) this currency.
@@ -281,7 +281,7 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>ApiResponse of ExchangeRateArray</returns>
-        ApiResponse<ExchangeRateArray> ListExchangeRateByCurrencyWithHttpInfo (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        ApiResponse<ExchangeRateArray> ListExchangeRateByCurrencyWithHttpInfo(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
         /// <summary>
         /// List all recurring transactions with this currency.
         /// </summary>
@@ -292,7 +292,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>RecurrenceArray</returns>
-        RecurrenceArray ListRecurrenceByCurrency (string code, int? page = default(int?));
+        RecurrenceArray ListRecurrenceByCurrency(string code, int? page = default(int?));
 
         /// <summary>
         /// List all recurring transactions with this currency.
@@ -304,7 +304,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>ApiResponse of RecurrenceArray</returns>
-        ApiResponse<RecurrenceArray> ListRecurrenceByCurrencyWithHttpInfo (string code, int? page = default(int?));
+        ApiResponse<RecurrenceArray> ListRecurrenceByCurrencyWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all rules with this currency.
         /// </summary>
@@ -315,7 +315,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>RuleArray</returns>
-        RuleArray ListRuleByCurrency (string code, int? page = default(int?));
+        RuleArray ListRuleByCurrency(string code, int? page = default(int?));
 
         /// <summary>
         /// List all rules with this currency.
@@ -327,7 +327,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>ApiResponse of RuleArray</returns>
-        ApiResponse<RuleArray> ListRuleByCurrencyWithHttpInfo (string code, int? page = default(int?));
+        ApiResponse<RuleArray> ListRuleByCurrencyWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all transactions with this currency.
         /// </summary>
@@ -341,7 +341,7 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>TransactionArray</returns>
-        TransactionArray ListTransactionByCurrency (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        TransactionArray ListTransactionByCurrency(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
 
         /// <summary>
         /// List all transactions with this currency.
@@ -356,7 +356,7 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>ApiResponse of TransactionArray</returns>
-        ApiResponse<TransactionArray> ListTransactionByCurrencyWithHttpInfo (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        ApiResponse<TransactionArray> ListTransactionByCurrencyWithHttpInfo(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
         /// <summary>
         /// Store a new currency
         /// </summary>
@@ -366,7 +366,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>CurrencySingle</returns>
-        CurrencySingle StoreCurrency (Currency currency);
+        CurrencySingle StoreCurrency(Currency currency);
 
         /// <summary>
         /// Store a new currency
@@ -377,7 +377,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        ApiResponse<CurrencySingle> StoreCurrencyWithHttpInfo (Currency currency);
+        ApiResponse<CurrencySingle> StoreCurrencyWithHttpInfo(Currency currency);
         /// <summary>
         /// Update existing currency.
         /// </summary>
@@ -388,7 +388,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>CurrencySingle</returns>
-        CurrencySingle UpdateCurrency (string code, Currency currency);
+        CurrencySingle UpdateCurrency(string code, Currency currency);
 
         /// <summary>
         /// Update existing currency.
@@ -400,7 +400,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        ApiResponse<CurrencySingle> UpdateCurrencyWithHttpInfo (string code, Currency currency);
+        ApiResponse<CurrencySingle> UpdateCurrencyWithHttpInfo(string code, Currency currency);
         #endregion Synchronous Operations
     }
 
@@ -419,7 +419,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        System.Threading.Tasks.Task<CurrencySingle> DefaultCurrencyAsync (string code);
+        System.Threading.Tasks.Task<CurrencySingle> DefaultCurrencyAsync(string code);
 
         /// <summary>
         /// Make currency default currency.
@@ -430,7 +430,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> DefaultCurrencyAsyncWithHttpInfo (string code);
+        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> DefaultCurrencyAsyncWithHttpInfo(string code);
         /// <summary>
         /// Delete a currency.
         /// </summary>
@@ -440,7 +440,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteCurrencyAsync (string code);
+        System.Threading.Tasks.Task DeleteCurrencyAsync(string code);
 
         /// <summary>
         /// Delete a currency.
@@ -451,7 +451,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCurrencyAsyncWithHttpInfo (string code);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCurrencyAsyncWithHttpInfo(string code);
         /// <summary>
         /// Disable a currency.
         /// </summary>
@@ -461,7 +461,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        System.Threading.Tasks.Task<CurrencySingle> DisableCurrencyAsync (int code);
+        System.Threading.Tasks.Task<CurrencySingle> DisableCurrencyAsync(int code);
 
         /// <summary>
         /// Disable a currency.
@@ -472,7 +472,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> DisableCurrencyAsyncWithHttpInfo (int code);
+        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> DisableCurrencyAsyncWithHttpInfo(int code);
         /// <summary>
         /// Enable a single currency.
         /// </summary>
@@ -482,7 +482,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        System.Threading.Tasks.Task<CurrencySingle> EnableCurrencyAsync (string code);
+        System.Threading.Tasks.Task<CurrencySingle> EnableCurrencyAsync(string code);
 
         /// <summary>
         /// Enable a single currency.
@@ -493,7 +493,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> EnableCurrencyAsyncWithHttpInfo (string code);
+        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> EnableCurrencyAsyncWithHttpInfo(string code);
         /// <summary>
         /// Get a single currency.
         /// </summary>
@@ -503,7 +503,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        System.Threading.Tasks.Task<CurrencySingle> GetCurrencyAsync (string code);
+        System.Threading.Tasks.Task<CurrencySingle> GetCurrencyAsync(string code);
 
         /// <summary>
         /// Get a single currency.
@@ -514,7 +514,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> GetCurrencyAsyncWithHttpInfo (string code);
+        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> GetCurrencyAsyncWithHttpInfo(string code);
         /// <summary>
         /// List all accounts with this currency.
         /// </summary>
@@ -527,7 +527,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of AccountArray</returns>
-        System.Threading.Tasks.Task<AccountArray> ListAccountByCurrencyAsync (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
+        System.Threading.Tasks.Task<AccountArray> ListAccountByCurrencyAsync(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
 
         /// <summary>
         /// List all accounts with this currency.
@@ -541,7 +541,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of ApiResponse (AccountArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AccountArray>> ListAccountByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
+        System.Threading.Tasks.Task<ApiResponse<AccountArray>> ListAccountByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter));
         /// <summary>
         /// List all available budgets with this currency.
         /// </summary>
@@ -552,7 +552,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>Task of AvailableBudgetArray</returns>
-        System.Threading.Tasks.Task<AvailableBudgetArray> ListAvailableBudgetByCurrencyAsync (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<AvailableBudgetArray> ListAvailableBudgetByCurrencyAsync(string code, int? page = default(int?));
 
         /// <summary>
         /// List all available budgets with this currency.
@@ -564,7 +564,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>Task of ApiResponse (AvailableBudgetArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AvailableBudgetArray>> ListAvailableBudgetByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<ApiResponse<AvailableBudgetArray>> ListAvailableBudgetByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all bills with this currency.
         /// </summary>
@@ -575,7 +575,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of BillArray</returns>
-        System.Threading.Tasks.Task<BillArray> ListBillByCurrencyAsync (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<BillArray> ListBillByCurrencyAsync(string code, int? page = default(int?));
 
         /// <summary>
         /// List all bills with this currency.
@@ -587,7 +587,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of ApiResponse (BillArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BillArray>> ListBillByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<ApiResponse<BillArray>> ListBillByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all budget limits with this currency
         /// </summary>
@@ -600,7 +600,7 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>Task of BudgetLimitArray</returns>
-        System.Threading.Tasks.Task<BudgetLimitArray> ListBudgetLimitByCurrencyAsync (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        System.Threading.Tasks.Task<BudgetLimitArray> ListBudgetLimitByCurrencyAsync(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
 
         /// <summary>
         /// List all budget limits with this currency
@@ -614,7 +614,7 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>Task of ApiResponse (BudgetLimitArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BudgetLimitArray>> ListBudgetLimitByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        System.Threading.Tasks.Task<ApiResponse<BudgetLimitArray>> ListBudgetLimitByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
         /// <summary>
         /// List all currencies.
         /// </summary>
@@ -624,7 +624,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of CurrencyArray</returns>
-        System.Threading.Tasks.Task<CurrencyArray> ListCurrencyAsync (int? page = default(int?));
+        System.Threading.Tasks.Task<CurrencyArray> ListCurrencyAsync(int? page = default(int?));
 
         /// <summary>
         /// List all currencies.
@@ -635,7 +635,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of ApiResponse (CurrencyArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencyArray>> ListCurrencyAsyncWithHttpInfo (int? page = default(int?));
+        System.Threading.Tasks.Task<ApiResponse<CurrencyArray>> ListCurrencyAsyncWithHttpInfo(int? page = default(int?));
         /// <summary>
         /// List all known exchange rates with (from or to) this currency.
         /// </summary>
@@ -649,7 +649,7 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>Task of ExchangeRateArray</returns>
-        System.Threading.Tasks.Task<ExchangeRateArray> ListExchangeRateByCurrencyAsync (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        System.Threading.Tasks.Task<ExchangeRateArray> ListExchangeRateByCurrencyAsync(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
 
         /// <summary>
         /// List all known exchange rates with (from or to) this currency.
@@ -664,7 +664,7 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>Task of ApiResponse (ExchangeRateArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ExchangeRateArray>> ListExchangeRateByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
+        System.Threading.Tasks.Task<ApiResponse<ExchangeRateArray>> ListExchangeRateByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?));
         /// <summary>
         /// List all recurring transactions with this currency.
         /// </summary>
@@ -675,7 +675,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of RecurrenceArray</returns>
-        System.Threading.Tasks.Task<RecurrenceArray> ListRecurrenceByCurrencyAsync (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<RecurrenceArray> ListRecurrenceByCurrencyAsync(string code, int? page = default(int?));
 
         /// <summary>
         /// List all recurring transactions with this currency.
@@ -687,7 +687,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of ApiResponse (RecurrenceArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RecurrenceArray>> ListRecurrenceByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<ApiResponse<RecurrenceArray>> ListRecurrenceByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all rules with this currency.
         /// </summary>
@@ -698,7 +698,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>Task of RuleArray</returns>
-        System.Threading.Tasks.Task<RuleArray> ListRuleByCurrencyAsync (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<RuleArray> ListRuleByCurrencyAsync(string code, int? page = default(int?));
 
         /// <summary>
         /// List all rules with this currency.
@@ -710,7 +710,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>Task of ApiResponse (RuleArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RuleArray>> ListRuleByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?));
+        System.Threading.Tasks.Task<ApiResponse<RuleArray>> ListRuleByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?));
         /// <summary>
         /// List all transactions with this currency.
         /// </summary>
@@ -724,7 +724,7 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>Task of TransactionArray</returns>
-        System.Threading.Tasks.Task<TransactionArray> ListTransactionByCurrencyAsync (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        System.Threading.Tasks.Task<TransactionArray> ListTransactionByCurrencyAsync(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
 
         /// <summary>
         /// List all transactions with this currency.
@@ -739,7 +739,7 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>Task of ApiResponse (TransactionArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<TransactionArray>> ListTransactionByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        System.Threading.Tasks.Task<ApiResponse<TransactionArray>> ListTransactionByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
         /// <summary>
         /// Store a new currency
         /// </summary>
@@ -749,7 +749,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>Task of CurrencySingle</returns>
-        System.Threading.Tasks.Task<CurrencySingle> StoreCurrencyAsync (Currency currency);
+        System.Threading.Tasks.Task<CurrencySingle> StoreCurrencyAsync(Currency currency);
 
         /// <summary>
         /// Store a new currency
@@ -760,7 +760,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> StoreCurrencyAsyncWithHttpInfo (Currency currency);
+        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> StoreCurrencyAsyncWithHttpInfo(Currency currency);
         /// <summary>
         /// Update existing currency.
         /// </summary>
@@ -771,7 +771,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>Task of CurrencySingle</returns>
-        System.Threading.Tasks.Task<CurrencySingle> UpdateCurrencyAsync (string code, Currency currency);
+        System.Threading.Tasks.Task<CurrencySingle> UpdateCurrencyAsync(string code, Currency currency);
 
         /// <summary>
         /// Update existing currency.
@@ -783,7 +783,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> UpdateCurrencyAsyncWithHttpInfo (string code, Currency currency);
+        System.Threading.Tasks.Task<ApiResponse<CurrencySingle>> UpdateCurrencyAsyncWithHttpInfo(string code, Currency currency);
         #endregion Asynchronous Operations
     }
 
@@ -806,7 +806,7 @@ namespace FireflyIII.Api
         /// Initializes a new instance of the <see cref="CurrenciesApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public CurrenciesApi() : this((string) null)
+        public CurrenciesApi() : this((string)null)
         {
         }
 
@@ -851,11 +851,11 @@ namespace FireflyIII.Api
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public CurrenciesApi(FireflyIII.Client.ISynchronousClient client,FireflyIII.Client.IAsynchronousClient asyncClient, FireflyIII.Client.IReadableConfiguration configuration)
+        public CurrenciesApi(FireflyIII.Client.ISynchronousClient client, FireflyIII.Client.IAsynchronousClient asyncClient, FireflyIII.Client.IReadableConfiguration configuration)
         {
-            if(client == null) throw new ArgumentNullException("client");
-            if(asyncClient == null) throw new ArgumentNullException("asyncClient");
-            if(configuration == null) throw new ArgumentNullException("configuration");
+            if (client == null) throw new ArgumentNullException("client");
+            if (asyncClient == null) throw new ArgumentNullException("asyncClient");
+            if (configuration == null) throw new ArgumentNullException("configuration");
 
             this.Client = client;
             this.AsynchronousClient = asyncClient;
@@ -886,7 +886,7 @@ namespace FireflyIII.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public FireflyIII.Client.IReadableConfiguration Configuration {get; set;}
+        public FireflyIII.Client.IReadableConfiguration Configuration { get; set; }
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
@@ -910,10 +910,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        public CurrencySingle DefaultCurrency (string code)
+        public CurrencySingle DefaultCurrency(string code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = DefaultCurrencyWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = DefaultCurrencyWithHttpInfo(code);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -922,7 +922,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        public FireflyIII.Client.ApiResponse< CurrencySingle > DefaultCurrencyWithHttpInfo (string code)
+        public FireflyIII.Client.ApiResponse<CurrencySingle> DefaultCurrencyWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -955,7 +955,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post< CurrencySingle >("/api/v1/currencies/{code}/default", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<CurrencySingle>("/api/v1/currencies/{code}/default", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -972,10 +972,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        public async System.Threading.Tasks.Task<CurrencySingle> DefaultCurrencyAsync (string code)
+        public async System.Threading.Tasks.Task<CurrencySingle> DefaultCurrencyAsync(string code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await DefaultCurrencyAsyncWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await DefaultCurrencyAsyncWithHttpInfo(code);
+            return localVarResponse.Data;
 
         }
 
@@ -985,7 +985,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> DefaultCurrencyAsyncWithHttpInfo (string code)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> DefaultCurrencyAsyncWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1001,13 +1001,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
 
@@ -1037,9 +1037,9 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns></returns>
-        public void DeleteCurrency (string code)
+        public void DeleteCurrency(string code)
         {
-             DeleteCurrencyWithHttpInfo(code);
+            DeleteCurrencyWithHttpInfo(code);
         }
 
         /// <summary>
@@ -1048,7 +1048,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public FireflyIII.Client.ApiResponse<Object> DeleteCurrencyWithHttpInfo (string code)
+        public FireflyIII.Client.ApiResponse<Object> DeleteCurrencyWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1097,9 +1097,9 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteCurrencyAsync (string code)
+        public async System.Threading.Tasks.Task DeleteCurrencyAsync(string code)
         {
-             await DeleteCurrencyAsyncWithHttpInfo(code);
+            await DeleteCurrencyAsyncWithHttpInfo(code);
 
         }
 
@@ -1109,7 +1109,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteCurrencyAsyncWithHttpInfo (string code)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteCurrencyAsyncWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1124,13 +1124,13 @@ namespace FireflyIII.Api
             // to determine the Accept header
             String[] _accepts = new String[] {
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
 
@@ -1160,10 +1160,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        public CurrencySingle DisableCurrency (int code)
+        public CurrencySingle DisableCurrency(int code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = DisableCurrencyWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = DisableCurrencyWithHttpInfo(code);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1172,10 +1172,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        public FireflyIII.Client.ApiResponse< CurrencySingle > DisableCurrencyWithHttpInfo (int code)
+        public FireflyIII.Client.ApiResponse<CurrencySingle> DisableCurrencyWithHttpInfo(int code)
         {
             // verify the required parameter 'code' is set
-            if (code == null)
+            if (code == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'code' when calling CurrenciesApi->DisableCurrency");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -1194,8 +1194,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (code != null)
-                localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
+            localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
 
             // authentication (firefly_iii_auth) required
             // oauth required
@@ -1205,7 +1204,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post< CurrencySingle >("/api/v1/currencies/{code}/disable", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<CurrencySingle>("/api/v1/currencies/{code}/disable", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1222,10 +1221,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        public async System.Threading.Tasks.Task<CurrencySingle> DisableCurrencyAsync (int code)
+        public async System.Threading.Tasks.Task<CurrencySingle> DisableCurrencyAsync(int code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await DisableCurrencyAsyncWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await DisableCurrencyAsyncWithHttpInfo(code);
+            return localVarResponse.Data;
 
         }
 
@@ -1235,10 +1234,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> DisableCurrencyAsyncWithHttpInfo (int code)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> DisableCurrencyAsyncWithHttpInfo(int code)
         {
             // verify the required parameter 'code' is set
-            if (code == null)
+            if (code == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'code' when calling CurrenciesApi->DisableCurrency");
 
 
@@ -1251,15 +1250,14 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
-            if (code != null)
-                localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
+
+            localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
 
             // authentication (firefly_iii_auth) required
             // oauth required
@@ -1287,10 +1285,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        public CurrencySingle EnableCurrency (string code)
+        public CurrencySingle EnableCurrency(string code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = EnableCurrencyWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = EnableCurrencyWithHttpInfo(code);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1299,7 +1297,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        public FireflyIII.Client.ApiResponse< CurrencySingle > EnableCurrencyWithHttpInfo (string code)
+        public FireflyIII.Client.ApiResponse<CurrencySingle> EnableCurrencyWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1332,7 +1330,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post< CurrencySingle >("/api/v1/currencies/{code}/enable", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<CurrencySingle>("/api/v1/currencies/{code}/enable", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1349,10 +1347,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        public async System.Threading.Tasks.Task<CurrencySingle> EnableCurrencyAsync (string code)
+        public async System.Threading.Tasks.Task<CurrencySingle> EnableCurrencyAsync(string code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await EnableCurrencyAsyncWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await EnableCurrencyAsyncWithHttpInfo(code);
+            return localVarResponse.Data;
 
         }
 
@@ -1362,7 +1360,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> EnableCurrencyAsyncWithHttpInfo (string code)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> EnableCurrencyAsyncWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1378,13 +1376,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
 
@@ -1414,10 +1412,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>CurrencySingle</returns>
-        public CurrencySingle GetCurrency (string code)
+        public CurrencySingle GetCurrency(string code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = GetCurrencyWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = GetCurrencyWithHttpInfo(code);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1426,7 +1424,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        public FireflyIII.Client.ApiResponse< CurrencySingle > GetCurrencyWithHttpInfo (string code)
+        public FireflyIII.Client.ApiResponse<CurrencySingle> GetCurrencyWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1459,7 +1457,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< CurrencySingle >("/api/v1/currencies/{code}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<CurrencySingle>("/api/v1/currencies/{code}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1476,10 +1474,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of CurrencySingle</returns>
-        public async System.Threading.Tasks.Task<CurrencySingle> GetCurrencyAsync (string code)
+        public async System.Threading.Tasks.Task<CurrencySingle> GetCurrencyAsync(string code)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await GetCurrencyAsyncWithHttpInfo(code);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await GetCurrencyAsyncWithHttpInfo(code);
+            return localVarResponse.Data;
 
         }
 
@@ -1489,7 +1487,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="code">The currency code.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> GetCurrencyAsyncWithHttpInfo (string code)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> GetCurrencyAsyncWithHttpInfo(string code)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1505,13 +1503,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
 
@@ -1544,10 +1542,10 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>AccountArray</returns>
-        public AccountArray ListAccountByCurrency (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
+        public AccountArray ListAccountByCurrency(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = ListAccountByCurrencyWithHttpInfo(code, page, date, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = ListAccountByCurrencyWithHttpInfo(code, page, date, type);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1559,7 +1557,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>ApiResponse of AccountArray</returns>
-        public FireflyIII.Client.ApiResponse< AccountArray > ListAccountByCurrencyWithHttpInfo (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
+        public FireflyIII.Client.ApiResponse<AccountArray> ListAccountByCurrencyWithHttpInfo(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1603,7 +1601,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1622,7 +1620,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< AccountArray >("/api/v1/currencies/{code}/accounts", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<AccountArray>("/api/v1/currencies/{code}/accounts", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1642,10 +1640,10 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of AccountArray</returns>
-        public async System.Threading.Tasks.Task<AccountArray> ListAccountByCurrencyAsync (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
+        public async System.Threading.Tasks.Task<AccountArray> ListAccountByCurrencyAsync(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = await ListAccountByCurrencyAsyncWithHttpInfo(code, page, date, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = await ListAccountByCurrencyAsyncWithHttpInfo(code, page, date, type);
+            return localVarResponse.Data;
 
         }
 
@@ -1658,7 +1656,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of ApiResponse (AccountArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountArray>> ListAccountByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountArray>> ListAccountByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), string date = default(string), AccountTypeFilter type = default(AccountTypeFilter))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1674,13 +1672,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -1703,7 +1701,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1741,10 +1739,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>AvailableBudgetArray</returns>
-        public AvailableBudgetArray ListAvailableBudgetByCurrency (string code, int? page = default(int?))
+        public AvailableBudgetArray ListAvailableBudgetByCurrency(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<AvailableBudgetArray> localVarResponse = ListAvailableBudgetByCurrencyWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AvailableBudgetArray> localVarResponse = ListAvailableBudgetByCurrencyWithHttpInfo(code, page);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1754,7 +1752,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>ApiResponse of AvailableBudgetArray</returns>
-        public FireflyIII.Client.ApiResponse< AvailableBudgetArray > ListAvailableBudgetByCurrencyWithHttpInfo (string code, int? page = default(int?))
+        public FireflyIII.Client.ApiResponse<AvailableBudgetArray> ListAvailableBudgetByCurrencyWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1797,7 +1795,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< AvailableBudgetArray >("/api/v1/currencies/{code}/available_budgets", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<AvailableBudgetArray>("/api/v1/currencies/{code}/available_budgets", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1815,10 +1813,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>Task of AvailableBudgetArray</returns>
-        public async System.Threading.Tasks.Task<AvailableBudgetArray> ListAvailableBudgetByCurrencyAsync (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<AvailableBudgetArray> ListAvailableBudgetByCurrencyAsync(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<AvailableBudgetArray> localVarResponse = await ListAvailableBudgetByCurrencyAsyncWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AvailableBudgetArray> localVarResponse = await ListAvailableBudgetByCurrencyAsyncWithHttpInfo(code, page);
+            return localVarResponse.Data;
 
         }
 
@@ -1829,7 +1827,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50 (optional)</param>
         /// <returns>Task of ApiResponse (AvailableBudgetArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AvailableBudgetArray>> ListAvailableBudgetByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AvailableBudgetArray>> ListAvailableBudgetByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1845,13 +1843,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -1892,10 +1890,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>BillArray</returns>
-        public BillArray ListBillByCurrency (string code, int? page = default(int?))
+        public BillArray ListBillByCurrency(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<BillArray> localVarResponse = ListBillByCurrencyWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<BillArray> localVarResponse = ListBillByCurrencyWithHttpInfo(code, page);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1905,7 +1903,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>ApiResponse of BillArray</returns>
-        public FireflyIII.Client.ApiResponse< BillArray > ListBillByCurrencyWithHttpInfo (string code, int? page = default(int?))
+        public FireflyIII.Client.ApiResponse<BillArray> ListBillByCurrencyWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1948,7 +1946,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< BillArray >("/api/v1/currencies/{code}/bills", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<BillArray>("/api/v1/currencies/{code}/bills", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1966,10 +1964,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of BillArray</returns>
-        public async System.Threading.Tasks.Task<BillArray> ListBillByCurrencyAsync (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<BillArray> ListBillByCurrencyAsync(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<BillArray> localVarResponse = await ListBillByCurrencyAsyncWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<BillArray> localVarResponse = await ListBillByCurrencyAsyncWithHttpInfo(code, page);
+            return localVarResponse.Data;
 
         }
 
@@ -1980,7 +1978,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of ApiResponse (BillArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<BillArray>> ListBillByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<BillArray>> ListBillByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -1996,13 +1994,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -2045,10 +2043,10 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>BudgetLimitArray</returns>
-        public BudgetLimitArray ListBudgetLimitByCurrency (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public BudgetLimitArray ListBudgetLimitByCurrency(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
-             FireflyIII.Client.ApiResponse<BudgetLimitArray> localVarResponse = ListBudgetLimitByCurrencyWithHttpInfo(code, page, start, end);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<BudgetLimitArray> localVarResponse = ListBudgetLimitByCurrencyWithHttpInfo(code, page, start, end);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2060,7 +2058,7 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>ApiResponse of BudgetLimitArray</returns>
-        public FireflyIII.Client.ApiResponse< BudgetLimitArray > ListBudgetLimitByCurrencyWithHttpInfo (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public FireflyIII.Client.ApiResponse<BudgetLimitArray> ListBudgetLimitByCurrencyWithHttpInfo(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2123,7 +2121,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< BudgetLimitArray >("/api/v1/currencies/{code}/budget_limits", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<BudgetLimitArray>("/api/v1/currencies/{code}/budget_limits", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2143,10 +2141,10 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>Task of BudgetLimitArray</returns>
-        public async System.Threading.Tasks.Task<BudgetLimitArray> ListBudgetLimitByCurrencyAsync (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public async System.Threading.Tasks.Task<BudgetLimitArray> ListBudgetLimitByCurrencyAsync(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
-             FireflyIII.Client.ApiResponse<BudgetLimitArray> localVarResponse = await ListBudgetLimitByCurrencyAsyncWithHttpInfo(code, page, start, end);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<BudgetLimitArray> localVarResponse = await ListBudgetLimitByCurrencyAsyncWithHttpInfo(code, page, start, end);
+            return localVarResponse.Data;
 
         }
 
@@ -2159,7 +2157,7 @@ namespace FireflyIII.Api
         /// <param name="start">Start date for the budget limit list. (optional)</param>
         /// <param name="end">End date for the budget limit list. (optional)</param>
         /// <returns>Task of ApiResponse (BudgetLimitArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<BudgetLimitArray>> ListBudgetLimitByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<BudgetLimitArray>> ListBudgetLimitByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2175,13 +2173,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -2241,10 +2239,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>CurrencyArray</returns>
-        public CurrencyArray ListCurrency (int? page = default(int?))
+        public CurrencyArray ListCurrency(int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<CurrencyArray> localVarResponse = ListCurrencyWithHttpInfo(page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencyArray> localVarResponse = ListCurrencyWithHttpInfo(page);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2253,7 +2251,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>ApiResponse of CurrencyArray</returns>
-        public FireflyIII.Client.ApiResponse< CurrencyArray > ListCurrencyWithHttpInfo (int? page = default(int?))
+        public FireflyIII.Client.ApiResponse<CurrencyArray> ListCurrencyWithHttpInfo(int? page = default(int?))
         {
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
@@ -2290,7 +2288,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< CurrencyArray >("/api/v1/currencies", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<CurrencyArray>("/api/v1/currencies", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2307,10 +2305,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of CurrencyArray</returns>
-        public async System.Threading.Tasks.Task<CurrencyArray> ListCurrencyAsync (int? page = default(int?))
+        public async System.Threading.Tasks.Task<CurrencyArray> ListCurrencyAsync(int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<CurrencyArray> localVarResponse = await ListCurrencyAsyncWithHttpInfo(page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencyArray> localVarResponse = await ListCurrencyAsyncWithHttpInfo(page);
+            return localVarResponse.Data;
 
         }
 
@@ -2320,7 +2318,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of ApiResponse (CurrencyArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencyArray>> ListCurrencyAsyncWithHttpInfo (int? page = default(int?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencyArray>> ListCurrencyAsyncWithHttpInfo(int? page = default(int?))
         {
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -2332,13 +2330,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (page != null)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "page", page))
@@ -2380,10 +2378,10 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>ExchangeRateArray</returns>
-        public ExchangeRateArray ListExchangeRateByCurrency (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public ExchangeRateArray ListExchangeRateByCurrency(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
-             FireflyIII.Client.ApiResponse<ExchangeRateArray> localVarResponse = ListExchangeRateByCurrencyWithHttpInfo(code, page, date, start, end);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<ExchangeRateArray> localVarResponse = ListExchangeRateByCurrencyWithHttpInfo(code, page, date, start, end);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2396,7 +2394,7 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>ApiResponse of ExchangeRateArray</returns>
-        public FireflyIII.Client.ApiResponse< ExchangeRateArray > ListExchangeRateByCurrencyWithHttpInfo (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public FireflyIII.Client.ApiResponse<ExchangeRateArray> ListExchangeRateByCurrencyWithHttpInfo(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2469,7 +2467,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< ExchangeRateArray >("/api/v1/currencies/{code}/cer", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<ExchangeRateArray>("/api/v1/currencies/{code}/cer", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2490,10 +2488,10 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>Task of ExchangeRateArray</returns>
-        public async System.Threading.Tasks.Task<ExchangeRateArray> ListExchangeRateByCurrencyAsync (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public async System.Threading.Tasks.Task<ExchangeRateArray> ListExchangeRateByCurrencyAsync(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
-             FireflyIII.Client.ApiResponse<ExchangeRateArray> localVarResponse = await ListExchangeRateByCurrencyAsyncWithHttpInfo(code, page, date, start, end);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<ExchangeRateArray> localVarResponse = await ListExchangeRateByCurrencyAsyncWithHttpInfo(code, page, date, start, end);
+            return localVarResponse.Data;
 
         }
 
@@ -2507,7 +2505,7 @@ namespace FireflyIII.Api
         /// <param name="start">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <param name="end">Use this instead of the date parameter to search for a range of currency exchange values.  (optional)</param>
         /// <returns>Task of ApiResponse (ExchangeRateArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<ExchangeRateArray>> ListExchangeRateByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<ExchangeRateArray>> ListExchangeRateByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), DateTime? date = default(DateTime?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2523,13 +2521,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -2600,10 +2598,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>RecurrenceArray</returns>
-        public RecurrenceArray ListRecurrenceByCurrency (string code, int? page = default(int?))
+        public RecurrenceArray ListRecurrenceByCurrency(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<RecurrenceArray> localVarResponse = ListRecurrenceByCurrencyWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<RecurrenceArray> localVarResponse = ListRecurrenceByCurrencyWithHttpInfo(code, page);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2613,7 +2611,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>ApiResponse of RecurrenceArray</returns>
-        public FireflyIII.Client.ApiResponse< RecurrenceArray > ListRecurrenceByCurrencyWithHttpInfo (string code, int? page = default(int?))
+        public FireflyIII.Client.ApiResponse<RecurrenceArray> ListRecurrenceByCurrencyWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2656,7 +2654,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< RecurrenceArray >("/api/v1/currencies/{code}/recurrences", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<RecurrenceArray>("/api/v1/currencies/{code}/recurrences", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2674,10 +2672,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of RecurrenceArray</returns>
-        public async System.Threading.Tasks.Task<RecurrenceArray> ListRecurrenceByCurrencyAsync (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<RecurrenceArray> ListRecurrenceByCurrencyAsync(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<RecurrenceArray> localVarResponse = await ListRecurrenceByCurrencyAsyncWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<RecurrenceArray> localVarResponse = await ListRecurrenceByCurrencyAsyncWithHttpInfo(code, page);
+            return localVarResponse.Data;
 
         }
 
@@ -2688,7 +2686,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination is 50. (optional)</param>
         /// <returns>Task of ApiResponse (RecurrenceArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RecurrenceArray>> ListRecurrenceByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RecurrenceArray>> ListRecurrenceByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2704,13 +2702,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -2751,10 +2749,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>RuleArray</returns>
-        public RuleArray ListRuleByCurrency (string code, int? page = default(int?))
+        public RuleArray ListRuleByCurrency(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<RuleArray> localVarResponse = ListRuleByCurrencyWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<RuleArray> localVarResponse = ListRuleByCurrencyWithHttpInfo(code, page);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2764,7 +2762,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>ApiResponse of RuleArray</returns>
-        public FireflyIII.Client.ApiResponse< RuleArray > ListRuleByCurrencyWithHttpInfo (string code, int? page = default(int?))
+        public FireflyIII.Client.ApiResponse<RuleArray> ListRuleByCurrencyWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2807,7 +2805,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< RuleArray >("/api/v1/currencies/{code}/rules", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<RuleArray>("/api/v1/currencies/{code}/rules", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2825,10 +2823,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>Task of RuleArray</returns>
-        public async System.Threading.Tasks.Task<RuleArray> ListRuleByCurrencyAsync (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<RuleArray> ListRuleByCurrencyAsync(string code, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<RuleArray> localVarResponse = await ListRuleByCurrencyAsyncWithHttpInfo(code, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<RuleArray> localVarResponse = await ListRuleByCurrencyAsyncWithHttpInfo(code, page);
+            return localVarResponse.Data;
 
         }
 
@@ -2839,7 +2837,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="page">Page number. The default pagination per 50. (optional)</param>
         /// <returns>Task of ApiResponse (RuleArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RuleArray>> ListRuleByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<RuleArray>> ListRuleByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2855,13 +2853,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -2905,10 +2903,10 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>TransactionArray</returns>
-        public TransactionArray ListTransactionByCurrency (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public TransactionArray ListTransactionByCurrency(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = ListTransactionByCurrencyWithHttpInfo(code, page, startDate, endDate, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = ListTransactionByCurrencyWithHttpInfo(code, page, startDate, endDate, type);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2921,7 +2919,7 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>ApiResponse of TransactionArray</returns>
-        public FireflyIII.Client.ApiResponse< TransactionArray > ListTransactionByCurrencyWithHttpInfo (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public FireflyIII.Client.ApiResponse<TransactionArray> ListTransactionByCurrencyWithHttpInfo(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -2975,7 +2973,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -2994,7 +2992,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< TransactionArray >("/api/v1/currencies/{code}/transactions", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<TransactionArray>("/api/v1/currencies/{code}/transactions", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -3015,10 +3013,10 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>Task of TransactionArray</returns>
-        public async System.Threading.Tasks.Task<TransactionArray> ListTransactionByCurrencyAsync (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public async System.Threading.Tasks.Task<TransactionArray> ListTransactionByCurrencyAsync(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = await ListTransactionByCurrencyAsyncWithHttpInfo(code, page, startDate, endDate, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = await ListTransactionByCurrencyAsyncWithHttpInfo(code, page, startDate, endDate, type);
+            return localVarResponse.Data;
 
         }
 
@@ -3032,7 +3030,7 @@ namespace FireflyIII.Api
         /// <param name="endDate">A date formatted YYYY-MM-DD, to limit the list of transactions.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned (optional)</param>
         /// <returns>Task of ApiResponse (TransactionArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<TransactionArray>> ListTransactionByCurrencyAsyncWithHttpInfo (string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<TransactionArray>> ListTransactionByCurrencyAsyncWithHttpInfo(string code, int? page = default(int?), DateTime? startDate = default(DateTime?), DateTime? endDate = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -3048,13 +3046,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             if (page != null)
@@ -3087,7 +3085,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -3124,10 +3122,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>CurrencySingle</returns>
-        public CurrencySingle StoreCurrency (Currency currency)
+        public CurrencySingle StoreCurrency(Currency currency)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = StoreCurrencyWithHttpInfo(currency);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = StoreCurrencyWithHttpInfo(currency);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3136,7 +3134,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        public FireflyIII.Client.ApiResponse< CurrencySingle > StoreCurrencyWithHttpInfo (Currency currency)
+        public FireflyIII.Client.ApiResponse<CurrencySingle> StoreCurrencyWithHttpInfo(Currency currency)
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
@@ -3145,7 +3143,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -3170,7 +3168,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post< CurrencySingle >("/api/v1/currencies", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<CurrencySingle>("/api/v1/currencies", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -3187,10 +3185,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>Task of CurrencySingle</returns>
-        public async System.Threading.Tasks.Task<CurrencySingle> StoreCurrencyAsync (Currency currency)
+        public async System.Threading.Tasks.Task<CurrencySingle> StoreCurrencyAsync(Currency currency)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await StoreCurrencyAsyncWithHttpInfo(currency);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await StoreCurrencyAsyncWithHttpInfo(currency);
+            return localVarResponse.Data;
 
         }
 
@@ -3200,7 +3198,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency">JSON array or key&#x3D;value pairs with the necessary currency information. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> StoreCurrencyAsyncWithHttpInfo (Currency currency)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> StoreCurrencyAsyncWithHttpInfo(Currency currency)
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
@@ -3210,7 +3208,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -3218,13 +3216,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             localVarRequestOptions.Data = currency;
 
             // authentication (firefly_iii_auth) required
@@ -3254,10 +3252,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>CurrencySingle</returns>
-        public CurrencySingle UpdateCurrency (string code, Currency currency)
+        public CurrencySingle UpdateCurrency(string code, Currency currency)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = UpdateCurrencyWithHttpInfo(code, currency);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = UpdateCurrencyWithHttpInfo(code, currency);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3267,7 +3265,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of CurrencySingle</returns>
-        public FireflyIII.Client.ApiResponse< CurrencySingle > UpdateCurrencyWithHttpInfo (string code, Currency currency)
+        public FireflyIII.Client.ApiResponse<CurrencySingle> UpdateCurrencyWithHttpInfo(string code, Currency currency)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -3280,7 +3278,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -3307,7 +3305,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put< CurrencySingle >("/api/v1/currencies/{code}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<CurrencySingle>("/api/v1/currencies/{code}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -3325,10 +3323,10 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>Task of CurrencySingle</returns>
-        public async System.Threading.Tasks.Task<CurrencySingle> UpdateCurrencyAsync (string code, Currency currency)
+        public async System.Threading.Tasks.Task<CurrencySingle> UpdateCurrencyAsync(string code, Currency currency)
         {
-             FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await UpdateCurrencyAsyncWithHttpInfo(code, currency);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<CurrencySingle> localVarResponse = await UpdateCurrencyAsyncWithHttpInfo(code, currency);
+            return localVarResponse.Data;
 
         }
 
@@ -3339,7 +3337,7 @@ namespace FireflyIII.Api
         /// <param name="code">The currency code.</param>
         /// <param name="currency">JSON array with updated currency information. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (CurrencySingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> UpdateCurrencyAsyncWithHttpInfo (string code, Currency currency)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<CurrencySingle>> UpdateCurrencyAsyncWithHttpInfo(string code, Currency currency)
         {
             // verify the required parameter 'code' is set
             if (code == null)
@@ -3353,7 +3351,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -3361,13 +3359,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (code != null)
                 localVarRequestOptions.PathParameters.Add("code", FireflyIII.Client.ClientUtils.ParameterToString(code)); // path parameter
             localVarRequestOptions.Data = currency;

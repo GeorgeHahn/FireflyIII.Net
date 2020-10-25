@@ -156,7 +156,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "amount" is required (not null)
-            if (amount == null)
+            if (amount == 0)
             {
                 throw new InvalidDataException("amount is a required property for TransactionSplit and cannot be null");
             }

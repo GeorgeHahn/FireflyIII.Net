@@ -7,14 +7,30 @@ using System.Text;
 
 namespace FireflyIII.Client
 {
+    /// <summary>
+    /// Allows to convert to enum based on json, with some case tolerance because api might return all lower case.
+    /// </summary>
     public class TolerantEnumConverter : StringEnumConverter
     {
+        /// <summary>
+        /// Checks if it is possible to convert it might not be an enum type.
+        /// </summary>
+        /// <param name="objectType"></param>
+        /// <returns></returns>
         public override bool CanConvert(Type objectType)
         {
             Type type = IsNullableType(objectType) ? Nullable.GetUnderlyingType(objectType) : objectType;
             return type.IsEnum;
         }
 
+        /// <summary>
+        /// Extracts from json an enum or null if it fails.
+        /// </summary>
+        /// <param name="reader"></param>
+        /// <param name="objectType"></param>
+        /// <param name="existingValue"></param>
+        /// <param name="serializer"></param>
+        /// <returns></returns>
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             bool isNullable = IsNullableType(objectType);
@@ -65,6 +81,12 @@ namespace FireflyIII.Client
             return null;
         }
 
+        /// <summary>
+        /// Writes the value/enum into json.
+        /// </summary>
+        /// <param name="writer"></param>
+        /// <param name="value"></param>
+        /// <param name="serializer"></param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             writer.WriteValue(value.ToString());

@@ -415,7 +415,7 @@ namespace FireflyIII.Api
         public FireflyIII.Client.ApiResponse< List<ChartDataSet> > GetChartABOverviewWithHttpInfo (int id, DateTime start, DateTime end)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling ChartsApi->GetChartABOverview");
 
             // verify the required parameter 'start' is set
@@ -442,7 +442,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (start != null)
             {
@@ -510,7 +510,7 @@ namespace FireflyIII.Api
         public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<List<ChartDataSet>>> GetChartABOverviewAsyncWithHttpInfo (int id, DateTime start, DateTime end)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling ChartsApi->GetChartABOverview");
 
             // verify the required parameter 'start' is set
@@ -538,7 +538,7 @@ namespace FireflyIII.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (start != null)
             {

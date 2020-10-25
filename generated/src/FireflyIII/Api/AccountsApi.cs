@@ -36,7 +36,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns></returns>
-        void DeleteAccount (int id);
+        void DeleteAccount(int id);
 
         /// <summary>
         /// Permanently delete account.
@@ -47,7 +47,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteAccountWithHttpInfo (int id);
+        ApiResponse<Object> DeleteAccountWithHttpInfo(int id);
         /// <summary>
         /// Get single account.
         /// </summary>
@@ -58,7 +58,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>AccountSingle</returns>
-        AccountSingle GetAccount (int id, DateTime? date = default(DateTime?));
+        AccountSingle GetAccount(int id, DateTime? date = default(DateTime?));
 
         /// <summary>
         /// Get single account.
@@ -70,7 +70,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>ApiResponse of AccountSingle</returns>
-        ApiResponse<AccountSingle> GetAccountWithHttpInfo (int id, DateTime? date = default(DateTime?));
+        ApiResponse<AccountSingle> GetAccountWithHttpInfo(int id, DateTime? date = default(DateTime?));
         /// <summary>
         /// List all accounts.
         /// </summary>
@@ -82,7 +82,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>AccountArray</returns>
-        AccountArray ListAccount (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
+        AccountArray ListAccount(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
 
         /// <summary>
         /// List all accounts.
@@ -95,7 +95,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>ApiResponse of AccountArray</returns>
-        ApiResponse<AccountArray> ListAccountWithHttpInfo (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
+        ApiResponse<AccountArray> ListAccountWithHttpInfo(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
         /// <summary>
         /// List all piggy banks related to the account.
         /// </summary>
@@ -106,7 +106,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>PiggyBankArray</returns>
-        PiggyBankArray ListPiggyBankByAccount (int id, int? page = default(int?));
+        PiggyBankArray ListPiggyBankByAccount(int id, int? page = default(int?));
 
         /// <summary>
         /// List all piggy banks related to the account.
@@ -118,7 +118,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>ApiResponse of PiggyBankArray</returns>
-        ApiResponse<PiggyBankArray> ListPiggyBankByAccountWithHttpInfo (int id, int? page = default(int?));
+        ApiResponse<PiggyBankArray> ListPiggyBankByAccountWithHttpInfo(int id, int? page = default(int?));
         /// <summary>
         /// List all transactions related to the account.
         /// </summary>
@@ -133,7 +133,7 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>TransactionArray</returns>
-        TransactionArray ListTransactionByAccount (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        TransactionArray ListTransactionByAccount(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
 
         /// <summary>
         /// List all transactions related to the account.
@@ -149,7 +149,7 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>ApiResponse of TransactionArray</returns>
-        ApiResponse<TransactionArray> ListTransactionByAccountWithHttpInfo (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        ApiResponse<TransactionArray> ListTransactionByAccountWithHttpInfo(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
         /// <summary>
         /// Create new account.
         /// </summary>
@@ -159,7 +159,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>AccountSingle</returns>
-        AccountSingle StoreAccount (Account account);
+        AccountSingle StoreAccount(Account account);
 
         /// <summary>
         /// Create new account.
@@ -170,7 +170,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of AccountSingle</returns>
-        ApiResponse<AccountSingle> StoreAccountWithHttpInfo (Account account);
+        ApiResponse<AccountSingle> StoreAccountWithHttpInfo(Account account);
         /// <summary>
         /// Update existing account.
         /// </summary>
@@ -181,7 +181,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>AccountSingle</returns>
-        AccountSingle UpdateAccount (int id, Account account);
+        AccountSingle UpdateAccount(int id, Account account);
 
         /// <summary>
         /// Update existing account.
@@ -193,7 +193,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of AccountSingle</returns>
-        ApiResponse<AccountSingle> UpdateAccountWithHttpInfo (int id, Account account);
+        ApiResponse<AccountSingle> UpdateAccountWithHttpInfo(int id, Account account);
         #endregion Synchronous Operations
     }
 
@@ -212,7 +212,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteAccountAsync (int id);
+        System.Threading.Tasks.Task DeleteAccountAsync(int id);
 
         /// <summary>
         /// Permanently delete account.
@@ -223,7 +223,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAccountAsyncWithHttpInfo (int id);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAccountAsyncWithHttpInfo(int id);
         /// <summary>
         /// Get single account.
         /// </summary>
@@ -234,7 +234,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>Task of AccountSingle</returns>
-        System.Threading.Tasks.Task<AccountSingle> GetAccountAsync (int id, DateTime? date = default(DateTime?));
+        System.Threading.Tasks.Task<AccountSingle> GetAccountAsync(int id, DateTime? date = default(DateTime?));
 
         /// <summary>
         /// Get single account.
@@ -246,7 +246,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>Task of ApiResponse (AccountSingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AccountSingle>> GetAccountAsyncWithHttpInfo (int id, DateTime? date = default(DateTime?));
+        System.Threading.Tasks.Task<ApiResponse<AccountSingle>> GetAccountAsyncWithHttpInfo(int id, DateTime? date = default(DateTime?));
         /// <summary>
         /// List all accounts.
         /// </summary>
@@ -258,7 +258,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of AccountArray</returns>
-        System.Threading.Tasks.Task<AccountArray> ListAccountAsync (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
+        System.Threading.Tasks.Task<AccountArray> ListAccountAsync(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
 
         /// <summary>
         /// List all accounts.
@@ -271,7 +271,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of ApiResponse (AccountArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AccountArray>> ListAccountAsyncWithHttpInfo (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
+        System.Threading.Tasks.Task<ApiResponse<AccountArray>> ListAccountAsyncWithHttpInfo(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter));
         /// <summary>
         /// List all piggy banks related to the account.
         /// </summary>
@@ -282,7 +282,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>Task of PiggyBankArray</returns>
-        System.Threading.Tasks.Task<PiggyBankArray> ListPiggyBankByAccountAsync (int id, int? page = default(int?));
+        System.Threading.Tasks.Task<PiggyBankArray> ListPiggyBankByAccountAsync(int id, int? page = default(int?));
 
         /// <summary>
         /// List all piggy banks related to the account.
@@ -294,7 +294,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>Task of ApiResponse (PiggyBankArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PiggyBankArray>> ListPiggyBankByAccountAsyncWithHttpInfo (int id, int? page = default(int?));
+        System.Threading.Tasks.Task<ApiResponse<PiggyBankArray>> ListPiggyBankByAccountAsyncWithHttpInfo(int id, int? page = default(int?));
         /// <summary>
         /// List all transactions related to the account.
         /// </summary>
@@ -309,7 +309,7 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>Task of TransactionArray</returns>
-        System.Threading.Tasks.Task<TransactionArray> ListTransactionByAccountAsync (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        System.Threading.Tasks.Task<TransactionArray> ListTransactionByAccountAsync(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
 
         /// <summary>
         /// List all transactions related to the account.
@@ -325,7 +325,7 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>Task of ApiResponse (TransactionArray)</returns>
-        System.Threading.Tasks.Task<ApiResponse<TransactionArray>> ListTransactionByAccountAsyncWithHttpInfo (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
+        System.Threading.Tasks.Task<ApiResponse<TransactionArray>> ListTransactionByAccountAsyncWithHttpInfo(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter));
         /// <summary>
         /// Create new account.
         /// </summary>
@@ -335,7 +335,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>Task of AccountSingle</returns>
-        System.Threading.Tasks.Task<AccountSingle> StoreAccountAsync (Account account);
+        System.Threading.Tasks.Task<AccountSingle> StoreAccountAsync(Account account);
 
         /// <summary>
         /// Create new account.
@@ -346,7 +346,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (AccountSingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AccountSingle>> StoreAccountAsyncWithHttpInfo (Account account);
+        System.Threading.Tasks.Task<ApiResponse<AccountSingle>> StoreAccountAsyncWithHttpInfo(Account account);
         /// <summary>
         /// Update existing account.
         /// </summary>
@@ -357,7 +357,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>Task of AccountSingle</returns>
-        System.Threading.Tasks.Task<AccountSingle> UpdateAccountAsync (int id, Account account);
+        System.Threading.Tasks.Task<AccountSingle> UpdateAccountAsync(int id, Account account);
 
         /// <summary>
         /// Update existing account.
@@ -369,7 +369,7 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (AccountSingle)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AccountSingle>> UpdateAccountAsyncWithHttpInfo (int id, Account account);
+        System.Threading.Tasks.Task<ApiResponse<AccountSingle>> UpdateAccountAsyncWithHttpInfo(int id, Account account);
         #endregion Asynchronous Operations
     }
 
@@ -392,7 +392,7 @@ namespace FireflyIII.Api
         /// Initializes a new instance of the <see cref="AccountsApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public AccountsApi() : this((string) null)
+        public AccountsApi() : this((string)null)
         {
         }
 
@@ -437,11 +437,11 @@ namespace FireflyIII.Api
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public AccountsApi(FireflyIII.Client.ISynchronousClient client,FireflyIII.Client.IAsynchronousClient asyncClient, FireflyIII.Client.IReadableConfiguration configuration)
+        public AccountsApi(FireflyIII.Client.ISynchronousClient client, FireflyIII.Client.IAsynchronousClient asyncClient, FireflyIII.Client.IReadableConfiguration configuration)
         {
-            if(client == null) throw new ArgumentNullException("client");
-            if(asyncClient == null) throw new ArgumentNullException("asyncClient");
-            if(configuration == null) throw new ArgumentNullException("configuration");
+            if (client == null) throw new ArgumentNullException("client");
+            if (asyncClient == null) throw new ArgumentNullException("asyncClient");
+            if (configuration == null) throw new ArgumentNullException("configuration");
 
             this.Client = client;
             this.AsynchronousClient = asyncClient;
@@ -472,7 +472,7 @@ namespace FireflyIII.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public FireflyIII.Client.IReadableConfiguration Configuration {get; set;}
+        public FireflyIII.Client.IReadableConfiguration Configuration { get; set; }
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
@@ -496,9 +496,9 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns></returns>
-        public void DeleteAccount (int id)
+        public void DeleteAccount(int id)
         {
-             DeleteAccountWithHttpInfo(id);
+            DeleteAccountWithHttpInfo(id);
         }
 
         /// <summary>
@@ -507,10 +507,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public FireflyIII.Client.ApiResponse<Object> DeleteAccountWithHttpInfo (int id)
+        public FireflyIII.Client.ApiResponse<Object> DeleteAccountWithHttpInfo(int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->DeleteAccount");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -528,8 +528,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
-                localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
+            localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
             // oauth required
@@ -556,9 +555,9 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteAccountAsync (int id)
+        public async System.Threading.Tasks.Task DeleteAccountAsync(int id)
         {
-             await DeleteAccountAsyncWithHttpInfo(id);
+            await DeleteAccountAsyncWithHttpInfo(id);
 
         }
 
@@ -568,10 +567,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">The ID of the account.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteAccountAsyncWithHttpInfo (int id)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<Object>> DeleteAccountAsyncWithHttpInfo(int id)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->DeleteAccount");
 
 
@@ -583,14 +582,14 @@ namespace FireflyIII.Api
             // to determine the Accept header
             String[] _accepts = new String[] {
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+
             
-            if (id != null)
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             // authentication (firefly_iii_auth) required
@@ -620,10 +619,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>AccountSingle</returns>
-        public AccountSingle GetAccount (int id, DateTime? date = default(DateTime?))
+        public AccountSingle GetAccount(int id, DateTime? date = default(DateTime?))
         {
-             FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = GetAccountWithHttpInfo(id, date);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = GetAccountWithHttpInfo(id, date);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -633,10 +632,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>ApiResponse of AccountSingle</returns>
-        public FireflyIII.Client.ApiResponse< AccountSingle > GetAccountWithHttpInfo (int id, DateTime? date = default(DateTime?))
+        public FireflyIII.Client.ApiResponse<AccountSingle> GetAccountWithHttpInfo(int id, DateTime? date = default(DateTime?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->GetAccount");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -655,7 +654,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (date != null)
             {
@@ -676,7 +675,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< AccountSingle >("/api/v1/accounts/{id}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<AccountSingle>("/api/v1/accounts/{id}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -694,10 +693,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>Task of AccountSingle</returns>
-        public async System.Threading.Tasks.Task<AccountSingle> GetAccountAsync (int id, DateTime? date = default(DateTime?))
+        public async System.Threading.Tasks.Task<AccountSingle> GetAccountAsync(int id, DateTime? date = default(DateTime?))
         {
-             FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = await GetAccountAsyncWithHttpInfo(id, date);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = await GetAccountAsyncWithHttpInfo(id, date);
+            return localVarResponse.Data;
 
         }
 
@@ -708,10 +707,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <returns>Task of ApiResponse (AccountSingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountSingle>> GetAccountAsyncWithHttpInfo (int id, DateTime? date = default(DateTime?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountSingle>> GetAccountAsyncWithHttpInfo(int id, DateTime? date = default(DateTime?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->GetAccount");
 
 
@@ -724,14 +723,14 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+
             
-            if (id != null)
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (date != null)
             {
@@ -772,10 +771,10 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>AccountArray</returns>
-        public AccountArray ListAccount (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
+        public AccountArray ListAccount(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = ListAccountWithHttpInfo(page, date, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = ListAccountWithHttpInfo(page, date, type);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -786,7 +785,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>ApiResponse of AccountArray</returns>
-        public FireflyIII.Client.ApiResponse< AccountArray > ListAccountWithHttpInfo (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
+        public FireflyIII.Client.ApiResponse<AccountArray> ListAccountWithHttpInfo(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
         {
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
@@ -824,7 +823,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -843,7 +842,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< AccountArray >("/api/v1/accounts", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<AccountArray>("/api/v1/accounts", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -862,10 +861,10 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of AccountArray</returns>
-        public async System.Threading.Tasks.Task<AccountArray> ListAccountAsync (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
+        public async System.Threading.Tasks.Task<AccountArray> ListAccountAsync(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = await ListAccountAsyncWithHttpInfo(page, date, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountArray> localVarResponse = await ListAccountAsyncWithHttpInfo(page, date, type);
+            return localVarResponse.Data;
 
         }
 
@@ -877,7 +876,7 @@ namespace FireflyIII.Api
         /// <param name="date">A date formatted YYYY-MM-DD. When added to the request, Firefly III will show the account&#39;s balance on that day.  (optional)</param>
         /// <param name="type">Optional filter on the account type(s) returned (optional)</param>
         /// <returns>Task of ApiResponse (AccountArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountArray>> ListAccountAsyncWithHttpInfo (int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountArray>> ListAccountAsyncWithHttpInfo(int? page = default(int?), DateTime? date = default(DateTime?), AccountTypeFilter type = default(AccountTypeFilter))
         {
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -889,13 +888,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             if (page != null)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "page", page))
@@ -916,7 +915,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -954,10 +953,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>PiggyBankArray</returns>
-        public PiggyBankArray ListPiggyBankByAccount (int id, int? page = default(int?))
+        public PiggyBankArray ListPiggyBankByAccount(int id, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<PiggyBankArray> localVarResponse = ListPiggyBankByAccountWithHttpInfo(id, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<PiggyBankArray> localVarResponse = ListPiggyBankByAccountWithHttpInfo(id, page);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -967,10 +966,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>ApiResponse of PiggyBankArray</returns>
-        public FireflyIII.Client.ApiResponse< PiggyBankArray > ListPiggyBankByAccountWithHttpInfo (int id, int? page = default(int?))
+        public FireflyIII.Client.ApiResponse<PiggyBankArray> ListPiggyBankByAccountWithHttpInfo(int id, int? page = default(int?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->ListPiggyBankByAccount");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -989,7 +988,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -1010,7 +1009,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< PiggyBankArray >("/api/v1/accounts/{id}/piggy_banks", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<PiggyBankArray>("/api/v1/accounts/{id}/piggy_banks", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1028,10 +1027,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>Task of PiggyBankArray</returns>
-        public async System.Threading.Tasks.Task<PiggyBankArray> ListPiggyBankByAccountAsync (int id, int? page = default(int?))
+        public async System.Threading.Tasks.Task<PiggyBankArray> ListPiggyBankByAccountAsync(int id, int? page = default(int?))
         {
-             FireflyIII.Client.ApiResponse<PiggyBankArray> localVarResponse = await ListPiggyBankByAccountAsyncWithHttpInfo(id, page);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<PiggyBankArray> localVarResponse = await ListPiggyBankByAccountAsyncWithHttpInfo(id, page);
+            return localVarResponse.Data;
 
         }
 
@@ -1042,10 +1041,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="page">Page number. The default pagination is per 50 items. (optional)</param>
         /// <returns>Task of ApiResponse (PiggyBankArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<PiggyBankArray>> ListPiggyBankByAccountAsyncWithHttpInfo (int id, int? page = default(int?))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<PiggyBankArray>> ListPiggyBankByAccountAsyncWithHttpInfo(int id, int? page = default(int?))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->ListPiggyBankByAccount");
 
 
@@ -1058,14 +1057,14 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+
             
-            if (id != null)
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -1109,10 +1108,10 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>TransactionArray</returns>
-        public TransactionArray ListTransactionByAccount (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public TransactionArray ListTransactionByAccount(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = ListTransactionByAccountWithHttpInfo(id, page, limit, start, end, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = ListTransactionByAccountWithHttpInfo(id, page, limit, start, end, type);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1126,10 +1125,10 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>ApiResponse of TransactionArray</returns>
-        public FireflyIII.Client.ApiResponse< TransactionArray > ListTransactionByAccountWithHttpInfo (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public FireflyIII.Client.ApiResponse<TransactionArray> ListTransactionByAccountWithHttpInfo(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->ListTransactionByAccount");
 
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
@@ -1148,7 +1147,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
+            
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -1190,7 +1189,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1209,7 +1208,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< TransactionArray >("/api/v1/accounts/{id}/transactions", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<TransactionArray>("/api/v1/accounts/{id}/transactions", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1231,10 +1230,10 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>Task of TransactionArray</returns>
-        public async System.Threading.Tasks.Task<TransactionArray> ListTransactionByAccountAsync (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public async System.Threading.Tasks.Task<TransactionArray> ListTransactionByAccountAsync(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
-             FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = await ListTransactionByAccountAsyncWithHttpInfo(id, page, limit, start, end, type);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<TransactionArray> localVarResponse = await ListTransactionByAccountAsyncWithHttpInfo(id, page, limit, start, end, type);
+            return localVarResponse.Data;
 
         }
 
@@ -1249,10 +1248,10 @@ namespace FireflyIII.Api
         /// <param name="end">A date formatted YYYY-MM-DD.  (optional)</param>
         /// <param name="type">Optional filter on the transaction type(s) returned. (optional)</param>
         /// <returns>Task of ApiResponse (TransactionArray)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<TransactionArray>> ListTransactionByAccountAsyncWithHttpInfo (int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<TransactionArray>> ListTransactionByAccountAsyncWithHttpInfo(int id, int? page = default(int?), int? limit = default(int?), DateTime? start = default(DateTime?), DateTime? end = default(DateTime?), TransactionTypeFilter type = default(TransactionTypeFilter))
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->ListTransactionByAccount");
 
 
@@ -1265,14 +1264,14 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
+
             
-            if (id != null)
                 localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (page != null)
             {
@@ -1314,7 +1313,7 @@ namespace FireflyIII.Api
                     }
                 }
             }
-            if (type != null)
+            if (type != 0)
             {
                 foreach (var _kvp in FireflyIII.Client.ClientUtils.ParameterToMultiMap("", "type", type))
                 {
@@ -1351,10 +1350,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>AccountSingle</returns>
-        public AccountSingle StoreAccount (Account account)
+        public AccountSingle StoreAccount(Account account)
         {
-             FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = StoreAccountWithHttpInfo(account);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = StoreAccountWithHttpInfo(account);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1363,7 +1362,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of AccountSingle</returns>
-        public FireflyIII.Client.ApiResponse< AccountSingle > StoreAccountWithHttpInfo (Account account)
+        public FireflyIII.Client.ApiResponse<AccountSingle> StoreAccountWithHttpInfo(Account account)
         {
             // verify the required parameter 'account' is set
             if (account == null)
@@ -1372,7 +1371,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -1397,7 +1396,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post< AccountSingle >("/api/v1/accounts", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<AccountSingle>("/api/v1/accounts", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1414,10 +1413,10 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>Task of AccountSingle</returns>
-        public async System.Threading.Tasks.Task<AccountSingle> StoreAccountAsync (Account account)
+        public async System.Threading.Tasks.Task<AccountSingle> StoreAccountAsync(Account account)
         {
-             FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = await StoreAccountAsyncWithHttpInfo(account);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = await StoreAccountAsyncWithHttpInfo(account);
+            return localVarResponse.Data;
 
         }
 
@@ -1427,7 +1426,7 @@ namespace FireflyIII.Api
         /// <exception cref="FireflyIII.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="account">JSON array with the necessary account information or key&#x3D;value pairs. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (AccountSingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountSingle>> StoreAccountAsyncWithHttpInfo (Account account)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountSingle>> StoreAccountAsyncWithHttpInfo(Account account)
         {
             // verify the required parameter 'account' is set
             if (account == null)
@@ -1437,7 +1436,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -1445,13 +1444,13 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
+
             localVarRequestOptions.Data = account;
 
             // authentication (firefly_iii_auth) required
@@ -1481,10 +1480,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>AccountSingle</returns>
-        public AccountSingle UpdateAccount (int id, Account account)
+        public AccountSingle UpdateAccount(int id, Account account)
         {
-             FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = UpdateAccountWithHttpInfo(id, account);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = UpdateAccountWithHttpInfo(id, account);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1494,10 +1493,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>ApiResponse of AccountSingle</returns>
-        public FireflyIII.Client.ApiResponse< AccountSingle > UpdateAccountWithHttpInfo (int id, Account account)
+        public FireflyIII.Client.ApiResponse<AccountSingle> UpdateAccountWithHttpInfo(int id, Account account)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->UpdateAccount");
 
             // verify the required parameter 'account' is set
@@ -1507,7 +1506,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -1522,8 +1521,7 @@ namespace FireflyIII.Api
             var localVarAccept = FireflyIII.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (id != null)
-                localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
+            localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = account;
 
             // authentication (firefly_iii_auth) required
@@ -1534,7 +1532,7 @@ namespace FireflyIII.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put< AccountSingle >("/api/v1/accounts/{id}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<AccountSingle>("/api/v1/accounts/{id}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1552,10 +1550,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>Task of AccountSingle</returns>
-        public async System.Threading.Tasks.Task<AccountSingle> UpdateAccountAsync (int id, Account account)
+        public async System.Threading.Tasks.Task<AccountSingle> UpdateAccountAsync(int id, Account account)
         {
-             FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = await UpdateAccountAsyncWithHttpInfo(id, account);
-             return localVarResponse.Data;
+            FireflyIII.Client.ApiResponse<AccountSingle> localVarResponse = await UpdateAccountAsyncWithHttpInfo(id, account);
+            return localVarResponse.Data;
 
         }
 
@@ -1566,10 +1564,10 @@ namespace FireflyIII.Api
         /// <param name="id">The ID of the account.</param>
         /// <param name="account">JSON array or formdata with updated account information. See the model for the exact specifications.</param>
         /// <returns>Task of ApiResponse (AccountSingle)</returns>
-        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountSingle>> UpdateAccountAsyncWithHttpInfo (int id, Account account)
+        public async System.Threading.Tasks.Task<FireflyIII.Client.ApiResponse<AccountSingle>> UpdateAccountAsyncWithHttpInfo(int id, Account account)
         {
             // verify the required parameter 'id' is set
-            if (id == null)
+            if (id == 0)
                 throw new FireflyIII.Client.ApiException(400, "Missing required parameter 'id' when calling AccountsApi->UpdateAccount");
 
             // verify the required parameter 'account' is set
@@ -1580,7 +1578,7 @@ namespace FireflyIII.Api
             FireflyIII.Client.RequestOptions localVarRequestOptions = new FireflyIII.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json", 
+                "application/json",
                 "application/x-www-form-urlencoded"
             };
 
@@ -1588,15 +1586,14 @@ namespace FireflyIII.Api
             String[] _accepts = new String[] {
                 "application/json"
             };
-            
+
             foreach (var _contentType in _contentTypes)
                 localVarRequestOptions.HeaderParameters.Add("Content-Type", _contentType);
-            
+
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
-            
-            if (id != null)
-                localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
+
+            localVarRequestOptions.PathParameters.Add("id", FireflyIII.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.Data = account;
 
             // authentication (firefly_iii_auth) required

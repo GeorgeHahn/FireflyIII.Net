@@ -47,7 +47,7 @@ namespace FireflyIII.Model
         public TransactionLink(int linkTypeId = default(int), string linkTypeName = default(string), int inwardId = default(int), int outwardId = default(int), string notes = default(string))
         {
             // to ensure "linkTypeId" is required (not null)
-            if (linkTypeId == null)
+            if (linkTypeId == 0)
             {
                 throw new InvalidDataException("linkTypeId is a required property for TransactionLink and cannot be null");
             }
@@ -57,7 +57,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "inwardId" is required (not null)
-            if (inwardId == null)
+            if (inwardId == 0)
             {
                 throw new InvalidDataException("inwardId is a required property for TransactionLink and cannot be null");
             }
@@ -67,7 +67,7 @@ namespace FireflyIII.Model
             }
 
             // to ensure "outwardId" is required (not null)
-            if (outwardId == null)
+            if (outwardId == 0)
             {
                 throw new InvalidDataException("outwardId is a required property for TransactionLink and cannot be null");
             }

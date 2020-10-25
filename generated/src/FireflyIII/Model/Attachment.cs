@@ -127,7 +127,7 @@ namespace FireflyIII.Model
 
             this.Model = model;
             // to ensure "modelId" is required (not null)
-            if (modelId == null)
+            if (modelId == 0)
             {
                 throw new InvalidDataException("modelId is a required property for Attachment and cannot be null");
             }
